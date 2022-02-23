@@ -1,0 +1,481 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;1,100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url(../assents/lisbon-bridge.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: "Montserrat", sans-serif, Arial, Helvetica, sans-serif;
+}
+
+main {
+  background-image: linear-gradient(to right, #11192580, rgba(83, 84, 88, 0.096) 70.71%);
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.size-page {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.setup-section {
+  padding: 100px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header img {
+  width: 200px;
+}
+.header .nav-bar {
+  display: flex;
+}
+.header .nav-bar .menu {
+  display: flex;
+  color: #fff;
+}
+.header .nav-bar .menu li {
+  padding: 15px;
+  transition: 0.4s ease;
+}
+.header .nav-bar .menu li:hover {
+  background-color: rgba(228, 125, 29, 0.253);
+  border-radius: 10px;
+}
+
+.container-home {
+  display: flex;
+  justify-content: flex-start;
+  align-items: unset;
+  height: 697px;
+}
+.container-home .introduction-title {
+  width: 60%;
+  padding: 40px 0 120px 0;
+}
+.container-home .introduction-title h1 {
+  font-size: 55px;
+  color: #fff;
+  -webkit-animation: roar 3000ms ease;
+          animation: roar 3000ms ease;
+}
+@-webkit-keyframes roar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes roar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container-home .introduction-title .btn-call-to-action {
+  padding: 15px 60px;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 25px;
+  background-color: #27215f;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.4s ease;
+  -webkit-animation: roar 2500ms ease;
+          animation: roar 2500ms ease;
+}
+@keyframes roar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container-home .introduction-title .btn-call-to-action:hover {
+  background-color: #F7941F;
+  transform: scale(1.2);
+  color: #27215f;
+}
+.container-home .introduction-title .btn-call-to-action i {
+  padding-left: 7px;
+}
+
+.bg-about {
+  background-image: linear-gradient(to right, #fdd99780, rgba(72, 82, 117, 0.144) 70.71%);
+}
+.bg-about .about-display {
+  display: flex;
+}
+.bg-about .about-display .article {
+  width: 50%;
+  padding-right: 50px;
+}
+.bg-about .about-display .article .about-title {
+  padding-bottom: 45px;
+}
+.bg-about .about-display .article .about-title h2 {
+  font-size: 45px;
+  color: #242424;
+}
+.bg-about .about-display .article p {
+  text-align: justify;
+  color: #464545;
+  font-size: 17px;
+  font-weight: 600;
+}
+.bg-about .about-display .my-picture {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: unset;
+}
+.bg-about .about-display .my-picture img {
+  width: 90%;
+  border-radius: 20px;
+  box-shadow: -2px 2px 10px #cccccc;
+}
+
+.bg-fixed {
+  background: url(../../assents/discovers.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-fixed .mask {
+  background-image: linear-gradient(to right, #FFF, #f5f5f5e7 40.71%, rgba(83, 84, 88, 0), rgba(83, 84, 88, 0));
+}
+.bg-fixed .mask .invite-section {
+  width: 60%;
+}
+.bg-fixed .mask .invite-section h2 {
+  font-size: 45px;
+  margin: 30px 0 60px 0;
+  color: #242424;
+}
+.bg-fixed .mask .invite-section h2 .display-title {
+  color: #F7941F;
+}
+.bg-fixed .mask .invite-section .slogan {
+  font-size: 20px;
+  color: #464545;
+  font-weight: 600;
+}
+.bg-fixed .mask .invite-section .slogan .airlins {
+  font-size: 24px;
+  font-weight: bold;
+  color: #27215f;
+}
+.bg-fixed .mask .invite-section .btn-call-to-action {
+  padding: 15px 60px;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 60px 0 40px 0;
+  background-color: #F7941F;
+  color: #27215f;
+  transition: 0.4s ease;
+}
+.bg-fixed .mask .invite-section .btn-call-to-action:hover {
+  background-color: #27215f;
+  transform: scale(1.2);
+  color: #fff;
+}
+
+.background-section {
+  background-color: #27215f;
+  color: #fff;
+}
+.background-section .works-display {
+  display: flex;
+  text-align: start;
+}
+.background-section .works-display .article {
+  width: 50%;
+}
+.background-section .works-display .article .works-title {
+  padding-bottom: 25px;
+}
+.background-section .works-display .article .works-title h2 {
+  font-size: 45px;
+  color: #fff;
+}
+.background-section .works-display .article p {
+  line-height: 25px;
+  padding: 0 60px 40px 0;
+  text-align: justify;
+  font-size: 20px;
+}
+.background-section .works-display .article .btn-call-to-action {
+  padding: 15px 60px;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #F7941F;
+  color: #27215f;
+  transition: 0.4s ease;
+}
+.background-section .works-display .article .btn-call-to-action:hover {
+  background-color: #168657;
+  transform: scale(1.2);
+  color: #fff;
+}
+.background-section .institutional {
+  width: 50%;
+  padding-left: 10px;
+}
+.background-section .institutional iframe {
+  border-radius: 20px;
+  width: 100%;
+  height: 325px;
+}
+
+.bg-color {
+  background-image: linear-gradient(to right, #fdd99780, rgba(72, 82, 117, 0.144) 70.71%);
+}
+.bg-color .title-service {
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #242424;
+}
+.bg-color .service-display {
+  display: flex;
+}
+.bg-color .service-display .services {
+  width: 50%;
+}
+.bg-color .service-display .services li {
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+  color: #464545;
+  font-weight: 600;
+}
+.bg-color .service-display .services li .fa-solid {
+  color: #007500;
+  font-size: 40px;
+  padding-right: 14px;
+}
+.bg-color .service-display .services li:last-child {
+  color: #b10101;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.bg-color .service-display .services li span {
+  padding-left: 55px;
+  color: #464545;
+}
+.bg-color .service-display .services-negociation {
+  width: 50%;
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bg-color .service-display .services-negociation .price {
+  text-align: center;
+}
+.bg-color .service-display .services-negociation .price h3 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #464545;
+}
+.bg-color .service-display .services-negociation .price span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #464545;
+}
+.bg-color .service-display .services-negociation .btn-call-to-action {
+  padding: 15px 60px;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #F7941F;
+  color: #27215f;
+  margin: 30px 0;
+  transition: 0.4s ease;
+}
+.bg-color .service-display .services-negociation .btn-call-to-action:hover {
+  background-color: #27215f;
+  transform: scale(1.2);
+  color: #fff;
+}
+
+.title-destiny {
+  text-align: center;
+}
+.title-destiny h2 {
+  font-size: 45px;
+  margin-bottom: 15px;
+  color: #242424;
+}
+.title-destiny span {
+  font-size: 20px;
+  color: #464545;
+}
+
+.carrousel {
+  display: flex;
+  margin: 30px auto;
+  overflow: hidden;
+  max-width: 1100px;
+}
+.carrousel .container-carrousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
+}
+.carrousel .container-carrousel .box-destin {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 290px;
+  height: 350px;
+  border-radius: 20px;
+  box-shadow: -1px 1px 8px #757575;
+  margin: 10px 15px;
+}
+.carrousel .container-carrousel .box-destin img {
+  width: 100%;
+  height: 80%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 1px 8px #757575;
+}
+.carrousel .container-carrousel .box-destin .info-travel {
+  margin: 20px;
+}
+.carrousel .container-carrousel .box-destin .info-travel h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #464545;
+}
+
+.bg-section {
+  background-color: #fff;
+}
+.bg-section .display-support {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-section .display-support li {
+  width: 330px;
+  height: 350px;
+  padding: 20px;
+  margin: 0 20px;
+  text-align: center;
+  color: #464545;
+  transition: 0.5s ease-in-out;
+}
+.bg-section .display-support li:hover {
+  box-shadow: -2px 2px 10px #cccccc;
+  border-radius: 20px;
+  transform: scale(1.1);
+}
+.bg-section .display-support li .icon {
+  margin-bottom: 10px;
+}
+.bg-section .display-support li .icon img {
+  width: 120px;
+}
+.bg-section .display-support li h4 {
+  margin-bottom: 20px;
+  color: #242424;
+}
+.bg-section .display-support li p {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.footer {
+  padding: 80px 0 0 0;
+  background-color: #47403e;
+}
+.footer .display-footer {
+  display: flex;
+  padding-bottom: 130px;
+}
+.footer .display-footer div {
+  margin: 0 20px;
+  color: #fff;
+}
+.footer .display-footer div h4 {
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+.footer .display-footer .payment {
+  width: 400px;
+}
+.footer .display-footer .payment img {
+  width: 100%;
+}
+.footer .display-footer .location {
+  width: 180px;
+}
+.footer .display-footer .location span {
+  line-height: 27px;
+}
+.footer .display-footer .general-information {
+  width: 300px;
+}
+.footer .display-footer .social-links h4 {
+  margin-left: 5px;
+}
+.footer .display-footer .social-links .fa-brands {
+  font-size: 35px;
+  margin: 7px;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+.footer .display-footer .social-links .fa-brands:hover {
+  color: #F7941F;
+  transform: scale(1.31);
+}
+.footer .developer {
+  padding: 40px 0;
+  border-top: 1px solid #252525;
+  text-align: center;
+  color: #fff;
+}
+.footer .developer a {
+  color: #F7941F;
+  transition: 0.4s ease;
+}
+.footer .developer a:hover {
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */

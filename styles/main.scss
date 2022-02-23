@@ -1,0 +1,15 @@
+//setup files
+@import './partials/base';
+@import './partials/mixins-extends/mixin-extends';
+@import './partials/variables/variables';
+
+//page structure
+@import './partials/header';
+@import './partials/home';
+@import './partials/about';
+@import './partials/invite';
+@import './partials/works';
+@import './partials/services';
+@import './partials/destin';
+@import './partials/support';
+@import './partials/footer';

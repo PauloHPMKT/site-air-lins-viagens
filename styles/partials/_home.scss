@@ -1,0 +1,52 @@
+.container-home {
+    @include align-items(flex, flex-start, unset);
+    height: 697px;
+
+    .introduction-title {
+        width: 60%;
+        padding: 40px 0 120px 0;
+
+        h1 {
+            font-size: 55px;
+            color: #fff;
+            animation: roar 3000ms ease;
+            // animation title
+            @keyframes roar {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .btn-call-to-action {
+            @include layout-btn;
+            margin-top: 25px;
+            background-color: $primary-color;
+            color: #fff;
+            cursor: pointer;
+            transition: .4s ease;
+            animation: roar 2500ms ease;
+            // animation button
+            @keyframes roar {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            
+            &:hover {
+                @include hover-btn-effect($secondary-color);
+                color: $primary-color;
+            }
+
+            i {
+                padding-left: 7px;
+            }
+        }
+    }
+}

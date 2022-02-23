@@ -1,0 +1,74 @@
+.footer {
+    padding: 80px 0 0 0;
+    background-color: #47403e;
+
+    .display-footer {
+        display: flex;
+        padding-bottom: 130px;
+
+        
+        div {
+            margin: 0 20px;
+            color: #fff;
+
+            h4 {
+                margin-bottom: 30px;
+                font-size: 15px;
+            }
+        }
+
+        .payment {
+            width: 400px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .location {
+            width: 180px;
+
+            span {
+                line-height: 27px;
+            }
+        }
+
+        .general-information {
+            width: 300px;
+        }
+
+        .social-links {
+            
+            h4 {
+                margin-left: 5px;
+            }
+            .fa-brands {
+                font-size: 35px;
+                margin: 7px;
+                transition: .4s ease;
+                cursor: pointer;
+
+                &:hover {
+                    color: $secondary-color;
+                    transform: scale(1.31);
+                }
+            }
+        }
+    }
+
+    .developer {
+        padding: 40px 0;
+        border-top: 1px solid #252525;
+        text-align: center;
+        color: #fff;
+
+        a {
+            color: #F7941F;
+            transition: .4s ease;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}

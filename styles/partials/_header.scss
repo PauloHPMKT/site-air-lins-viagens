@@ -1,0 +1,26 @@
+.header {
+    @include align-items(flex, space-between, center);
+
+    img {
+        width: 200px;
+    }
+
+    .nav-bar {
+        display: flex;
+
+        .menu {
+            display: flex;
+            color: #fff;
+
+            li {
+                padding: 15px;
+                transition: .4s ease;
+
+                &:hover {
+                    background-color: rgba(228, 125, 29, 0.253);
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}

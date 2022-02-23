@@ -1,0 +1,20 @@
+//align-items
+@mixin align-items($flex, $justify, $align) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+//layout btn
+@mixin layout-btn {
+    padding: 15px 60px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@mixin hover-btn-effect($bg-btn-color) {
+    background-color: $bg-btn-color;
+    transform: scale(1.2);
+}

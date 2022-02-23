@@ -1,0 +1,80 @@
+.bg-color {
+    background-image: linear-gradient(to right, #fdd99780, rgba(72, 82, 117, 0.144) 70.71%);
+
+    .title-service {
+        font-size: $font-size-h2;
+        text-align: center;
+        margin-bottom: 40px;
+        color: $primary-font-color;
+    }
+    .service-display {
+        display: flex;
+
+        .services {
+            width: $width-flexbox;
+
+            li {
+                font-size: $font-size-text;
+                @include align-items(flex, flex-start, center);
+                margin: 10px;
+                color: $secondary-font-color;
+                font-weight: 600;
+
+                .fa-solid {
+                    color: #007500;
+                    font-size: 40px;
+                    padding-right: 14px;
+                }
+
+                &:last-child {
+                    color: #b10101;
+                    margin-top: 30px;
+                    flex-wrap: wrap;
+                }
+                
+                span {
+                    padding-left: 55px;
+                    color: $secondary-font-color;
+                }
+                
+            }
+        }
+
+        .services-negociation {
+            width: $width-flexbox;
+            padding: 0 30px;
+            @include align-items(flex, center, center);
+            flex-direction: column;
+
+            .price {
+                text-align: center;
+                
+                h3 {
+                    font-size: 26px;
+                    margin-bottom: 20px;
+                    color: $secondary-font-color;
+
+                }
+
+                span {
+                    font-size: $font-size-text;
+                    font-weight: 600;
+                    color: $secondary-font-color;
+                }
+            }
+
+            .btn-call-to-action {
+                @include layout-btn;
+                background-color: $secondary-color;
+                color: $primary-color;
+                margin: 30px 0;
+                transition: .4s ease;
+
+                &:hover {
+                    @include hover-btn-effect($primary-color);
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
