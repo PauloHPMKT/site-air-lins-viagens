@@ -1,26 +1,26 @@
 const destinationList = [
     {
-        destination: '../assents/lisbon.png',
+        destination: '/assents/lisbon.png',
         text: 'Lisboa - Portugal',
     },
     {
-        destination: '../assents/faro-algarve.png',
+        destination: '/assents/faro-algarve.png',
         text: 'Faro - Portugal',
     },
     {
-        destination: '../assents/porto-portugal.png',
+        destination: '/assents/porto-portugal.png',
         text: 'Porto - Portugal',
     },
     {
-        destination: '../assents/recife.png',
+        destination: '/assents/recife.png',
         text: 'Recife - Brasil',
     },
     {
-        destination: '../assents/fortaleza.jpg',
+        destination: '/assents/fortaleza.jpg',
         text: 'Fortaleza - Brasil',
     },
     {
-        destination: '../assents/rio-de-janeiro.jpg',
+        destination: '/assents/rio-de-janeiro.jpg',
         text: 'Rio de Janeiro - Brasil',
     },
     
