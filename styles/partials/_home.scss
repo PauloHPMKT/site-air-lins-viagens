@@ -1,6 +1,6 @@
 .container-home {
     @include align-items(flex, flex-start, unset);
-    height: 697px;
+    height: 100vh;
 
     .introduction-title {
         width: 60%;

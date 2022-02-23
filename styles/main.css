@@ -6,20 +6,16 @@
   outline: none;
 }
 
-html {
-  height: 100%;
-}
-
 body {
   background-image: url(../assents/lisbon-bridge.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 104.5%;
   font-family: "Montserrat", sans-serif, Arial, Helvetica, sans-serif;
 }
 
 main {
   background-image: linear-gradient(to right, #11192580, rgba(83, 84, 88, 0.096) 70.71%);
-  height: 100vh;
+  height: 110.7vh;
 }
 
 ul {
@@ -68,7 +64,7 @@ a {
   display: flex;
   justify-content: flex-start;
   align-items: unset;
-  height: 697px;
+  height: 100vh;
 }
 .container-home .introduction-title {
   width: 60%;
