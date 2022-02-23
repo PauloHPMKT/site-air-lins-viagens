@@ -9,8 +9,11 @@
 body {
   background-image: url(../assents/lisbon-bridge.png);
   background-repeat: no-repeat;
-  background-size: 104.5%;
+  background-position: top;
+  background-size: 110%;
+  background-attachment: fixed;
   font-family: "Montserrat", sans-serif, Arial, Helvetica, sans-serif;
+  height: auto;
 }
 
 main {
@@ -64,11 +67,11 @@ a {
   display: flex;
   justify-content: flex-start;
   align-items: unset;
-  height: 100vh;
+  height: 90vh;
 }
 .container-home .introduction-title {
   width: 60%;
-  padding: 40px 0 120px 0;
+  padding: 120px 0 120px 0;
 }
 .container-home .introduction-title h1 {
   font-size: 55px;
@@ -124,6 +127,7 @@ a {
 }
 
 .bg-about {
+  background-color: #fff;
   background-image: linear-gradient(to right, #fdd99780, rgba(72, 82, 117, 0.144) 70.71%);
 }
 .bg-about .about-display {
@@ -256,6 +260,7 @@ a {
 
 .bg-color {
   background-image: linear-gradient(to right, #fdd99780, rgba(72, 82, 117, 0.144) 70.71%);
+  background-color: #fff;
 }
 .bg-color .title-service {
   font-size: 45px;
@@ -330,31 +335,33 @@ a {
   color: #fff;
 }
 
-.title-destiny {
+.bg-destin {
+  background-color: #fff;
+}
+.bg-destin .title-destiny {
   text-align: center;
 }
-.title-destiny h2 {
+.bg-destin .title-destiny h2 {
   font-size: 45px;
   margin-bottom: 15px;
   color: #242424;
 }
-.title-destiny span {
+.bg-destin .title-destiny span {
   font-size: 20px;
   color: #464545;
 }
-
-.carrousel {
+.bg-destin .carrousel {
   display: flex;
   margin: 30px auto;
   overflow: hidden;
   max-width: 1100px;
 }
-.carrousel .container-carrousel {
+.bg-destin .carrousel .container-carrousel {
   display: flex;
   transition: transform 0.5s ease-in-out;
   transform: translateX(0);
 }
-.carrousel .container-carrousel .box-destin {
+.bg-destin .carrousel .container-carrousel .box-destin {
   -o-object-fit: cover;
      object-fit: cover;
   width: 290px;
@@ -363,7 +370,7 @@ a {
   box-shadow: -1px 1px 8px #757575;
   margin: 10px 15px;
 }
-.carrousel .container-carrousel .box-destin img {
+.bg-destin .carrousel .container-carrousel .box-destin img {
   width: 100%;
   height: 80%;
   border-top-left-radius: 20px;
@@ -372,10 +379,10 @@ a {
   border-bottom-right-radius: 20px;
   box-shadow: 0px 1px 8px #757575;
 }
-.carrousel .container-carrousel .box-destin .info-travel {
+.bg-destin .carrousel .container-carrousel .box-destin .info-travel {
   margin: 20px;
 }
-.carrousel .container-carrousel .box-destin .info-travel h3 {
+.bg-destin .carrousel .container-carrousel .box-destin .info-travel h3 {
   font-size: 20px;
   font-weight: 600;
   color: #464545;

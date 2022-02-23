@@ -1,56 +1,60 @@
-.title-destiny {
-    text-align: center;
+.bg-destin {
+    background-color: #fff;    
 
-    h2 {
-        font-size: $font-size-h2;
-        margin-bottom: 15px;
-        color: $primary-font-color;
+    .title-destiny {
+        text-align: center;
+
+        h2 {
+            font-size: $font-size-h2;
+            margin-bottom: 15px;
+            color: $primary-font-color;
+        }
+
+        span {
+            font-size: 20px;
+            color: $secondary-font-color;
+        }
     }
 
-    span {
-        font-size: 20px;
-        color: $secondary-font-color;
-    }
-}
-
-.carrousel {
-    display: flex;
-    margin: 30px auto;
-    overflow: hidden;
-    max-width: 1100px;
-    
-    .container-carrousel {
+    .carrousel {
         display: flex;
-        transition: transform 0.5s ease-in-out;
-        transform: translateX(0);
+        margin: 30px auto;
+        overflow: hidden;
+        max-width: 1100px;
+        
+        .container-carrousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            transform: translateX(0);
 
-        .box-destin {
-            object-fit: cover;
-            width: 290px;
-            height: 350px;
-            border-radius: 20px;
-            box-shadow: -1px 1px 8px #757575;
-            margin: 10px 15px;
-    
-            img {
-                width: 100%;
-                height: 80%;
-                border-top-left-radius: 20px;
-                border-top-right-radius: 20px;
-                border-bottom-left-radius: 20px;
-                border-bottom-right-radius: 20px;
-                box-shadow: 0px 1px 8px #757575;
-            }
-    
-            .info-travel {
-                margin: 20px;
-    
-                h3 {
-                    font-size: $font-size-text;
-                    font-weight: 600;
-                    color: $secondary-font-color;
+            .box-destin {
+                object-fit: cover;
+                width: 290px;
+                height: 350px;
+                border-radius: 20px;
+                box-shadow: -1px 1px 8px #757575;
+                margin: 10px 15px;
+        
+                img {
+                    width: 100%;
+                    height: 80%;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                    box-shadow: 0px 1px 8px #757575;
+                }
+        
+                .info-travel {
+                    margin: 20px;
+        
+                    h3 {
+                        font-size: $font-size-text;
+                        font-weight: 600;
+                        color: $secondary-font-color;
+                    }
                 }
             }
-        }
-    }   
+        }   
+    }
 }
