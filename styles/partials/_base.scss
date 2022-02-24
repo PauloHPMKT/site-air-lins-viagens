@@ -19,8 +19,12 @@ body {
     font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
     height: auto;
 
-    @include resize-screen(1160px) {
+    @include resize-screen(1390px) {
         background-size: 120%;
+    }
+
+    @include resize-screen(1250px) {
+        background-size: 140%;
     }
 }
 
