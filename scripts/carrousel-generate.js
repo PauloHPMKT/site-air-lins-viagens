@@ -45,8 +45,6 @@ destinationList.map(item => {
 const imgs = document.querySelector('.container-carrousel')
 const img = document.querySelectorAll('.box-destin')
 
-console.log(img)
-
 //function to moviment carrousel
 let idx = 0
 
