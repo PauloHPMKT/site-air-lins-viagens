@@ -53,9 +53,9 @@
         .menu-bars {
             background-color: $secondary-color;
             color: #fff;
-            font-size: 50px;
+            font-size: 45px;
             padding: 5px 13px;
-            border-radius: 20px;
+            border-radius: 10px;
             cursor: pointer;
             transition: .4s all;
             display: none;
@@ -66,6 +66,10 @@
 
             @include tablet {
                 display: flex;
+            }
+
+            @include landscape {
+                font-size: 37px;
             }
         }
     }

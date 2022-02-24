@@ -4,6 +4,11 @@
     .display-support {
         @include align-items(flex, center, center);
 
+        @include landscape {
+            display: block;
+            text-align: center;
+        }
+
         li {
             width: 330px;
             height: 350px;
@@ -27,6 +32,12 @@
 
             @include tablet {
                 padding: 10px;
+            }
+
+            @include landscape {
+                text-align: center;
+                height: 270px;
+                margin: 15px auto;
             }
 
             .icon {

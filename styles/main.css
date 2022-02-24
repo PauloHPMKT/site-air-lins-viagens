@@ -14,21 +14,24 @@ body {
   background-attachment: fixed;
   font-family: "Montserrat", sans-serif, Arial, Helvetica, sans-serif;
   height: auto;
-}
-@media (max-width: 1390px) {
-  body {
-    background-size: 120%;
+  /*@include resize-screen(1390px) {
+      background-position: top;
+      background-size: cover;
   }
-}
-@media (max-width: 1250px) {
-  body {
-    background-size: 140%;
+
+  @include resize-screen(1250px) {
+      background-position: 0 40%;
+      background-size: 140%;
   }
+
+  @include landscape {
+      background-size: 200%;
+  }*/
 }
 
 main {
   background-image: linear-gradient(to right, #11192580, rgba(83, 84, 88, 0.096) 70.71%);
-  height: 110.7vh;
+  height: auto;
   width: 100vw;
 }
 
@@ -121,9 +124,9 @@ a {
 .header .nav-bar .menu-bars {
   background-color: #F7941F;
   color: #fff;
-  font-size: 50px;
+  font-size: 45px;
   padding: 5px 13px;
-  border-radius: 20px;
+  border-radius: 10px;
   cursor: pointer;
   transition: 0.4s all;
   display: none;
@@ -134,6 +137,11 @@ a {
 @media (max-width: 1024px) {
   .header .nav-bar .menu-bars {
     display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .header .nav-bar .menu-bars {
+    font-size: 37px;
   }
 }
 
@@ -159,6 +167,11 @@ a {
     padding: 60px 0;
   }
 }
+@media (max-width: 545px) {
+  .container-home .introduction-title {
+    text-align: center;
+  }
+}
 .container-home .introduction-title h1 {
   font-size: 55px;
   color: #fff;
@@ -181,6 +194,11 @@ a {
 @media (max-width: 1060px) {
   .container-home .introduction-title h1 {
     font-size: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .container-home .introduction-title h1 {
+    font-size: 43px;
   }
 }
 .container-home .introduction-title .btn-call-to-action {
@@ -362,6 +380,12 @@ a {
 @media (max-width: 1280px) {
   .bg-fixed .mask .invite-section .btn-call-to-action {
     display: block;
+  }
+}
+@media (max-width: 768px) {
+  .bg-fixed .mask .invite-section .btn-call-to-action {
+    font-size: 17px;
+    padding: 13px 40px;
   }
 }
 
@@ -571,6 +595,12 @@ a {
   transform: scale(1.2);
   color: #fff;
 }
+@media (max-width: 768px) {
+  .bg-color .service-display .services-negociation .btn-call-to-action {
+    font-size: 17px;
+    padding: 13px 40px;
+  }
+}
 @media (max-width: 930px) {
   .bg-color .service-display .services-negociation {
     padding: 0 0 0 10px;
@@ -638,6 +668,12 @@ a {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .bg-section .display-support {
+    display: block;
+    text-align: center;
+  }
+}
 .bg-section .display-support li {
   width: 330px;
   height: 350px;
@@ -660,6 +696,13 @@ a {
 @media (max-width: 1024px) {
   .bg-section .display-support li {
     padding: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .bg-section .display-support li {
+    text-align: center;
+    height: 270px;
+    margin: 15px auto;
   }
 }
 .bg-section .display-support li .icon {
@@ -698,6 +741,11 @@ a {
 .footer .display-footer {
   display: flex;
   padding-bottom: 130px;
+}
+@media (max-width: 768px) {
+  .footer .display-footer {
+    display: block;
+  }
 }
 .footer .display-footer div {
   margin: 0 20px;

@@ -17,6 +17,10 @@
             padding: 60px 0;
         }
 
+        @include resize-screen(545px) {
+            text-align: center
+        }
+
         h1 {
             font-size: 55px;
             color: #fff;
@@ -39,6 +43,12 @@
             @include resize-screen(1060px) {
                 font-size: 45px;
             }
+
+            @include landscape {
+                font-size: 43px;
+            }
+
+            
         }
 
         .btn-call-to-action {

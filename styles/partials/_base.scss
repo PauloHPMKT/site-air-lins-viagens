@@ -19,18 +19,25 @@ body {
     font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
     height: auto;
 
-    @include resize-screen(1390px) {
-        background-size: 120%;
+    /*@include resize-screen(1390px) {
+        background-position: top;
+        background-size: cover;
     }
 
     @include resize-screen(1250px) {
+        background-position: 0 40%;
         background-size: 140%;
     }
+
+    @include landscape {
+        background-size: 200%;
+    }*/
+
 }
 
 main {
     background-image: linear-gradient(to right, #11192580, rgba(83, 84, 88, 0.096) 70.71%);
-    height: 110.7vh;
+    height: auto;
     width: 100vw;
 }
 

@@ -55,6 +55,11 @@
                 @include normal-desktop {
                     display: block;
                 }
+
+                @include landscape {
+                    font-size: 17px;
+                    padding: 13px 40px;
+                }
             }
         }
     }

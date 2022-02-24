@@ -79,11 +79,18 @@
                     @include hover-btn-effect($primary-color);
                     color: #fff;
                 }
+
+                @include landscape {
+                    font-size: 17px;
+                    padding: 13px 40px;
+                }
             }
 
             @include resize-screen(930px) {
                 padding: 0 0 0 10px;
             }
+
+            
         }
     }
 }
