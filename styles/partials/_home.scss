@@ -5,7 +5,12 @@
 
     .introduction-title {
         width: 60%;
-        padding: 120px 0 120px 0;
+        padding: 120px 0;
+
+        @include resize-screen(950px) {
+            width: 100%;
+            padding: 60px 0;
+        }
 
         h1 {
             font-size: 55px;
@@ -19,6 +24,15 @@
                 100% {
                     opacity: 1;
                 }
+            }
+
+            @include resize-screen(1160px) {
+                font-size: 50px;
+            }
+
+            // predisposition to tablet mode
+            @include resize-screen(1060px) {
+                font-size: 45px;
             }
         }
 

@@ -11,13 +11,21 @@
         }
     }
 
+    @include normal-desktop {
+        max-width: 80%;
+    }
 
     img {
         width: 200px;
+
+        @include resize-screen(1180px) {
+            width: 150px;
+        }
+    
     }
 
     .nav-bar {
-        display: flex;
+        @include align-items(flex, center, center);
 
         .menu {
             display: flex;
@@ -31,6 +39,33 @@
                     background-color: rgba(228, 125, 29, 0.253);
                     border-radius: 10px;
                 }
+
+                @include resize-screen(1180px) {
+                    font-size: 14px;
+                }
+            }
+
+            @include tablet {
+                display: none;
+            }
+        }
+
+        .menu-bars {
+            background-color: $secondary-color;
+            color: #fff;
+            font-size: 50px;
+            padding: 5px 13px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: .4s all;
+            display: none;
+
+            &:hover {
+                background-color: $primary-color;
+            }
+
+            @include tablet {
+                display: flex;
             }
         }
     }

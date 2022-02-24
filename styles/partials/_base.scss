@@ -1,5 +1,6 @@
 //defining googlefonts
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;1,100&display=swap');
+@import './mixins-extends/responsive-design';
 
 //global styles
 * {
@@ -17,11 +18,16 @@ body {
     background-attachment: fixed;
     font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
     height: auto;
+
+    @include resize-screen(1160px) {
+        background-size: 120%;
+    }
 }
 
 main {
     background-image: linear-gradient(to right, #11192580, rgba(83, 84, 88, 0.096) 70.71%);
     height: 110.7vh;
+    width: 100vw;
 }
 
 ul {
@@ -38,6 +44,10 @@ a {
     max-width: 1100px;
     margin: 0 auto;
 
+    @include normal-desktop {
+        max-width: 80%;
+
+    }
 }
 
 .setup-section {
