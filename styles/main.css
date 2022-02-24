@@ -315,6 +315,11 @@ a {
 .bg-fixed .mask .invite-section {
   width: 60%;
 }
+@media (max-width: 1280px) {
+  .bg-fixed .mask .invite-section {
+    width: 50%;
+  }
+}
 .bg-fixed .mask .invite-section h2 {
   font-size: 45px;
   margin: 30px 0 60px 0;
@@ -322,6 +327,11 @@ a {
 }
 .bg-fixed .mask .invite-section h2 .display-title {
   color: #F7941F;
+}
+@media (max-width: 1280px) {
+  .bg-fixed .mask .invite-section h2 {
+    font-size: 40px;
+  }
 }
 .bg-fixed .mask .invite-section .slogan {
   font-size: 20px;
@@ -349,6 +359,11 @@ a {
   transform: scale(1.2);
   color: #fff;
 }
+@media (max-width: 1280px) {
+  .bg-fixed .mask .invite-section .btn-call-to-action {
+    display: block;
+  }
+}
 
 .background-section {
   background-color: #27215f;
@@ -358,8 +373,19 @@ a {
   display: flex;
   text-align: start;
 }
+@media (max-width: 930px) {
+  .background-section .works-display {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .background-section .works-display .article {
   width: 50%;
+}
+@media (max-width: 930px) {
+  .background-section .works-display .article {
+    width: 100%;
+  }
 }
 .background-section .works-display .article .works-title {
   padding-bottom: 25px;
@@ -368,11 +394,31 @@ a {
   font-size: 45px;
   color: #fff;
 }
+@media (max-width: 930px) {
+  .background-section .works-display .article .works-title h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 1024px) {
+  .background-section .works-display .article .works-title h2 {
+    font-size: 40px;
+  }
+}
 .background-section .works-display .article p {
   line-height: 25px;
   padding: 0 60px 40px 0;
   text-align: justify;
   font-size: 20px;
+}
+@media (max-width: 1280px) {
+  .background-section .works-display .article p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 930px) {
+  .background-section .works-display .article p {
+    padding: 0 0 40px 0;
+  }
 }
 .background-section .works-display .article .btn-call-to-action {
   padding: 15px 60px;
@@ -389,14 +435,59 @@ a {
   transform: scale(1.2);
   color: #fff;
 }
+@media (max-width: 930px) {
+  .background-section .works-display .article .btn-call-to-action {
+    display: none;
+  }
+}
 .background-section .institutional {
   width: 50%;
   padding-left: 10px;
+}
+@media (max-width: 930px) {
+  .background-section .institutional {
+    width: 100%;
+    text-align: center;
+  }
 }
 .background-section .institutional iframe {
   border-radius: 20px;
   width: 100%;
   height: 325px;
+}
+@media (max-width: 930px) {
+  .background-section .institutional iframe {
+    width: 80%;
+    text-align: center;
+  }
+}
+.background-section .institutional .btn-responsive {
+  width: 100%;
+  display: none;
+}
+.background-section .institutional .btn-responsive p {
+  padding: 30px 0;
+}
+.background-section .institutional .btn-responsive .btn-call-to-action {
+  padding: 15px 60px;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #F7941F;
+  color: #27215f;
+  transition: 0.4s ease;
+}
+.background-section .institutional .btn-responsive .btn-call-to-action:hover {
+  background-color: #168657;
+  transform: scale(1.2);
+  color: #fff;
+}
+@media (max-width: 930px) {
+  .background-section .institutional .btn-responsive {
+    display: block;
+    text-align: center;
+  }
 }
 
 .bg-color {
@@ -438,6 +529,11 @@ a {
   padding-left: 55px;
   color: #464545;
 }
+@media (max-width: 930px) {
+  .bg-color .service-display .services li {
+    font-size: 17px;
+  }
+}
 .bg-color .service-display .services-negociation {
   width: 50%;
   padding: 0 30px;
@@ -474,6 +570,11 @@ a {
   background-color: #27215f;
   transform: scale(1.2);
   color: #fff;
+}
+@media (max-width: 930px) {
+  .bg-color .service-display .services-negociation {
+    padding: 0 0 0 10px;
+  }
 }
 
 .bg-destin {
@@ -556,6 +657,11 @@ a {
 .bg-section .display-support li:hover h4 {
   color: #fff;
 }
+@media (max-width: 1024px) {
+  .bg-section .display-support li {
+    padding: 10px;
+  }
+}
 .bg-section .display-support li .icon {
   margin-bottom: 10px;
 }
@@ -566,6 +672,11 @@ a {
   padding: 40px;
   border-radius: 100%;
 }
+@media (max-width: 1024px) {
+  .bg-section .display-support li .icon .fa-solid {
+    font-size: 50px;
+  }
+}
 .bg-section .display-support li h4 {
   margin-bottom: 20px;
   color: #242424;
@@ -573,6 +684,11 @@ a {
 .bg-section .display-support li p {
   font-size: 15px;
   font-weight: 600;
+}
+@media (max-width: 1024px) {
+  .bg-section .display-support li p {
+    font-size: 13px;
+  }
 }
 
 .footer {

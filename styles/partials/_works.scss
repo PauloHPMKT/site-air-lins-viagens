@@ -6,8 +6,17 @@
         display: flex;
         text-align: start;
 
+        @include resize-screen(930px) {
+            display: flex;
+            flex-direction: column;
+        }
+
         .article {
             width: $width-flexbox;
+
+            @include resize-screen(930px) {
+                width: 100%;
+            }
 
             .works-title {
                 padding-bottom: 25px;
@@ -15,6 +24,14 @@
                 h2 {
                     font-size: $font-size-h2;
                     color: #fff;
+
+                    @include resize-screen(930px) {
+                        text-align: center;
+                    }
+
+                    @include tablet {
+                        font-size: 40px;
+                    }
                 }
             }
 
@@ -23,6 +40,14 @@
                 padding: 0 60px 40px 0;
                 text-align: justify;
                 font-size: $font-size-text;
+
+                @include normal-desktop {
+                    font-size: 17px;
+                }
+
+                @include resize-screen(930px) {
+                    padding: 0 0 40px 0;
+                }
             }
 
             .btn-call-to-action {
@@ -35,6 +60,10 @@
                     @include hover-btn-effect(#168657);
                     color: #fff;
                 }
+
+                @include resize-screen(930px) {
+                    display: none;
+                }
             }
         }
     }
@@ -43,10 +72,48 @@
         width: $width-flexbox;
         padding-left: 10px;
 
+        @include resize-screen(930px) {
+            width: 100%;
+            text-align: center;
+        }
+
         iframe {
             border-radius: 20px;
             width: 100%;
             height: 325px;
+
+            @include resize-screen(930px) {
+                width: 80%;
+                text-align: center;
+            }
+        }
+
+        .btn-responsive {
+            width: 100%;
+            display: none;
+
+            p {
+                padding: 30px 0
+            }
+            
+            .btn-call-to-action {
+                @include layout-btn;
+                background-color: $secondary-color;
+                color: $primary-color;
+                transition: .4s ease;
+                
+                &:hover {
+                    @include hover-btn-effect(#168657);
+                    color: #fff;
+                }
+            }
+            
+            @include resize-screen(930px) {
+                display: block;
+                text-align: center;
+            }
+     
         }
     }
+
 }

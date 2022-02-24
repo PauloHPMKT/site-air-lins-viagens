@@ -37,6 +37,10 @@
                     padding-left: 55px;
                     color: $secondary-font-color;
                 }
+
+                @include resize-screen(930px) {
+                    font-size: 17px;
+                }
                 
             }
         }
@@ -75,6 +79,10 @@
                     @include hover-btn-effect($primary-color);
                     color: #fff;
                 }
+            }
+
+            @include resize-screen(930px) {
+                padding: 0 0 0 10px;
             }
         }
     }

@@ -25,6 +25,10 @@
                 }
             }
 
+            @include tablet {
+                padding: 10px;
+            }
+
             .icon {
                 margin-bottom: 10px;
 
@@ -34,6 +38,10 @@
                     color: #fff;
                     padding: 40px;
                     border-radius: 100%;
+
+                    @include tablet {
+                        font-size: 50px;
+                    }
                 }
             }
 
@@ -45,6 +53,10 @@
             p {
                 font-size: 15px;
                 font-weight: 600;
+
+                @include tablet {
+                    font-size: 13px;
+                }
             }
         }
     }
