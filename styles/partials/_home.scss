@@ -8,6 +8,10 @@
         padding: 0 0 100px 0;
     }
 
+    @include mobile {
+        padding: 40px 0 100px 0;
+    }
+
     .introduction-title {
         width: 60%;
         padding: 120px 0;
@@ -17,9 +21,9 @@
             padding: 60px 0;
         }
 
-        @include resize-screen(545px) {
+        /*@include resize-screen(545px) {
             text-align: center
-        }
+        }*/
 
         h1 {
             font-size: 55px;
@@ -46,6 +50,11 @@
 
             @include landscape {
                 font-size: 43px;
+            }
+
+            @include mobile {
+                font-size: 33px;
+                padding: 30px 0
             }
 
             

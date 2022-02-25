@@ -24,13 +24,13 @@ body {
 @media (max-width: 940px) {
   body {
     background-position: 30% 40%;
-    background-size: 140%;
+    background-size: 180%;
   }
 }
 @media (max-width: 768px) {
   body {
     background-position: 30% 40%;
-    background-size: 200%;
+    background-size: 240%;
   }
 }
 @media (max-width: 540px) {
@@ -184,19 +184,22 @@ a {
     padding: 0 0 100px 0;
   }
 }
+@media (max-width: 480px) {
+  .container-home {
+    padding: 40px 0 100px 0;
+  }
+}
 .container-home .introduction-title {
   width: 60%;
   padding: 120px 0;
+  /*@include resize-screen(545px) {
+      text-align: center
+  }*/
 }
 @media (max-width: 950px) {
   .container-home .introduction-title {
     width: 100%;
     padding: 60px 0;
-  }
-}
-@media (max-width: 545px) {
-  .container-home .introduction-title {
-    text-align: center;
   }
 }
 .container-home .introduction-title h1 {
@@ -226,6 +229,12 @@ a {
 @media (max-width: 768px) {
   .container-home .introduction-title h1 {
     font-size: 43px;
+  }
+}
+@media (max-width: 480px) {
+  .container-home .introduction-title h1 {
+    font-size: 33px;
+    padding: 30px 0;
   }
 }
 .container-home .introduction-title .btn-call-to-action {
@@ -378,6 +387,16 @@ a {
 }
 @media (max-width: 768px) {
   .bg-fixed .mask .invite-section {
+    width: 60%;
+  }
+}
+@media (max-width: 590px) {
+  .bg-fixed .mask .invite-section {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .bg-fixed .mask .invite-section {
     width: 100%;
   }
 }
@@ -397,6 +416,7 @@ a {
 @media (max-width: 768px) {
   .bg-fixed .mask .invite-section h2 {
     padding-top: 40px;
+    margin: 80px 0;
   }
 }
 .bg-fixed .mask .invite-section .slogan {
@@ -479,6 +499,11 @@ a {
 @media (max-width: 1024px) {
   .background-section .works-display .article .works-title h2 {
     font-size: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .background-section .works-display .article .works-title h2 {
+    font-size: 35px;
   }
 }
 .background-section .works-display .article p {
@@ -836,7 +861,7 @@ a {
   .bg-section .display-support li {
     text-align: center;
     width: 200px;
-    height: 270px;
+    height: 300px;
     margin: 15px auto;
   }
 }
