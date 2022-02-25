@@ -757,11 +757,12 @@ a {
 @media (max-width: 800px) {
   .bg-destin .carrousel .container-carrousel .box-destin .info-travel h3 {
     font-size: 13px;
+    font-weight: bold;
   }
 }
 @media (max-width: 480px) {
   .bg-destin .carrousel .container-carrousel .box-destin .info-travel h3 {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 @media (max-width: 800px) {
