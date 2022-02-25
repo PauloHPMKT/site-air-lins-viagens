@@ -8,6 +8,10 @@
             font-size: $font-size-h2;
             margin-bottom: 15px;
             color: $primary-font-color;
+
+            @include mobile {
+                font-size: 40px;
+            }
         }
 
         span {

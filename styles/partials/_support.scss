@@ -24,6 +24,10 @@
                 transform: scale(1.1);
                 background-color: $primary-color;
                 color: #fff;
+
+                @include landscape {
+                    transform: unset;
+                }
                 
                 h4 {
                     color: #fff;
@@ -36,6 +40,7 @@
 
             @include landscape {
                 text-align: center;
+                width: 200px;
                 height: 270px;
                 margin: 15px auto;
             }
