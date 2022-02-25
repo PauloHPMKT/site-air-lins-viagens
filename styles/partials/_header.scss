@@ -21,6 +21,10 @@
         @include resize-screen(1180px) {
             width: 150px;
         }
+
+        @include mobile {
+            width: 100px;
+        }
     
     }
 
@@ -70,6 +74,10 @@
 
             @include landscape {
                 font-size: 37px;
+            }
+
+            @include mobile {
+                font-size: 30px;
             }
         }
     }

@@ -14,19 +14,30 @@ body {
   background-attachment: fixed;
   font-family: "Montserrat", sans-serif, Arial, Helvetica, sans-serif;
   height: auto;
-  /*@include resize-screen(1390px) {
-      background-position: top;
-      background-size: cover;
+}
+@media (max-width: 1500px) {
+  body {
+    background-position: 30% 20%;
+    background-size: 160%;
   }
-
-  @include resize-screen(1250px) {
-      background-position: 0 40%;
-      background-size: 140%;
+}
+@media (max-width: 940px) {
+  body {
+    background-position: 30% 40%;
+    background-size: 140%;
   }
-
-  @include landscape {
-      background-size: 200%;
-  }*/
+}
+@media (max-width: 768px) {
+  body {
+    background-position: 30% 0%;
+    background-size: 200%;
+  }
+}
+@media (max-width: 540px) {
+  body {
+    background-position: 60% 0%;
+    background-size: 300%;
+  }
 }
 
 main {
@@ -94,6 +105,11 @@ a {
     width: 150px;
   }
 }
+@media (max-width: 480px) {
+  .header img {
+    width: 100px;
+  }
+}
 .header .nav-bar {
   display: flex;
   justify-content: center;
@@ -142,6 +158,11 @@ a {
 @media (max-width: 768px) {
   .header .nav-bar .menu-bars {
     font-size: 37px;
+  }
+}
+@media (max-width: 480px) {
+  .header .nav-bar .menu-bars {
+    font-size: 30px;
   }
 }
 
@@ -230,6 +251,11 @@ a {
 }
 .container-home .introduction-title .btn-call-to-action i {
   padding-left: 7px;
+}
+@media (max-width: 480px) {
+  .container-home .introduction-title .btn-call-to-action {
+    padding: 15px 30px;
+  }
 }
 
 .bg-about {
@@ -320,6 +346,12 @@ a {
     height: 320px;
   }
 }
+@media (max-width: 480px) {
+  .bg-about .about-display .my-picture img {
+    width: 300px;
+    height: 250px;
+  }
+}
 
 .bg-fixed {
   background: url(../assents/discovers.jpg);
@@ -338,6 +370,11 @@ a {
     width: 50%;
   }
 }
+@media (max-width: 768px) {
+  .bg-fixed .mask .invite-section {
+    width: 100%;
+  }
+}
 .bg-fixed .mask .invite-section h2 {
   font-size: 45px;
   margin: 30px 0 60px 0;
@@ -351,6 +388,11 @@ a {
     font-size: 40px;
   }
 }
+@media (max-width: 768px) {
+  .bg-fixed .mask .invite-section h2 {
+    padding-top: 40px;
+  }
+}
 .bg-fixed .mask .invite-section .slogan {
   font-size: 20px;
   color: #464545;
@@ -360,6 +402,11 @@ a {
   font-size: 24px;
   font-weight: bold;
   color: #27215f;
+}
+@media (max-width: 768px) {
+  .bg-fixed .mask .invite-section .slogan {
+    font-size: 17px;
+  }
 }
 .bg-fixed .mask .invite-section .btn-call-to-action {
   padding: 15px 60px;
@@ -485,6 +532,12 @@ a {
     text-align: center;
   }
 }
+@media (max-width: 480px) {
+  .background-section .institutional iframe {
+    width: 100%;
+    height: 200px;
+  }
+}
 .background-section .institutional .btn-responsive {
   width: 100%;
   display: none;
@@ -507,6 +560,11 @@ a {
   transform: scale(1.2);
   color: #fff;
 }
+@media (max-width: 480px) {
+  .background-section .institutional .btn-responsive .btn-call-to-action {
+    padding: 15px 25px;
+  }
+}
 @media (max-width: 930px) {
   .background-section .institutional .btn-responsive {
     display: block;
@@ -524,11 +582,31 @@ a {
   margin-bottom: 40px;
   color: #242424;
 }
+@media (max-width: 480px) {
+  .bg-color .title-service {
+    font-size: 40px;
+  }
+}
+@media (max-width: 380px) {
+  .bg-color .title-service {
+    font-size: 35px;
+  }
+}
 .bg-color .service-display {
   display: flex;
 }
+@media (max-width: 690px) {
+  .bg-color .service-display {
+    display: block;
+  }
+}
 .bg-color .service-display .services {
   width: 50%;
+}
+@media (max-width: 690px) {
+  .bg-color .service-display .services {
+    width: 100%;
+  }
 }
 .bg-color .service-display .services li {
   font-size: 20px;
@@ -560,11 +638,17 @@ a {
 }
 .bg-color .service-display .services-negociation {
   width: 50%;
-  padding: 0 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+@media (max-width: 690px) {
+  .bg-color .service-display .services-negociation {
+    margin-top: 60px;
+    padding: 0;
+    width: 100%;
+  }
 }
 .bg-color .service-display .services-negociation .price {
   text-align: center;
@@ -633,6 +717,12 @@ a {
   transition: transform 0.5s ease-in-out;
   transform: translateX(0);
 }
+@media (max-width: 480px) {
+  .bg-destin .carrousel .container-carrousel {
+    width: auto;
+    justify-content: center;
+  }
+}
 .bg-destin .carrousel .container-carrousel .box-destin {
   -o-object-fit: cover;
      object-fit: cover;
@@ -654,10 +744,37 @@ a {
 .bg-destin .carrousel .container-carrousel .box-destin .info-travel {
   margin: 20px;
 }
+@media (max-width: 480px) {
+  .bg-destin .carrousel .container-carrousel .box-destin .info-travel {
+    margin: 10px;
+  }
+}
 .bg-destin .carrousel .container-carrousel .box-destin .info-travel h3 {
   font-size: 20px;
   font-weight: 600;
   color: #464545;
+}
+@media (max-width: 800px) {
+  .bg-destin .carrousel .container-carrousel .box-destin .info-travel h3 {
+    font-size: 13px;
+  }
+}
+@media (max-width: 480px) {
+  .bg-destin .carrousel .container-carrousel .box-destin .info-travel h3 {
+    font-size: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .bg-destin .carrousel .container-carrousel .box-destin {
+    width: 210px;
+    height: 270px;
+  }
+}
+@media (max-width: 480px) {
+  .bg-destin .carrousel .container-carrousel .box-destin {
+    width: 160px;
+    height: 220px;
+  }
 }
 
 .bg-section {

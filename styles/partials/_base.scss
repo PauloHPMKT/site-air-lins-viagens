@@ -19,20 +19,25 @@ body {
     font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
     height: auto;
 
-    /*@include resize-screen(1390px) {
-        background-position: top;
-        background-size: cover;
+    @include resize-screen(1500px) {
+        background-position: 30% 20%;
+        background-size: 160%;
     }
-
-    @include resize-screen(1250px) {
-        background-position: 0 40%;
+    
+    @include resize-screen(940px) {
+        background-position: 30% 40%;
         background-size: 140%;
     }
-
+    
     @include landscape {
+        background-position: 30% 0%;
         background-size: 200%;
-    }*/
+    }
 
+    @include resize-screen(540px) {
+        background-position: 60% 0%;
+        background-size: 300%;
+    }
 }
 
 main {

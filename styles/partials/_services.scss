@@ -7,12 +7,28 @@
         text-align: center;
         margin-bottom: 40px;
         color: $primary-font-color;
+
+        @include mobile {
+            font-size: 40px;
+        }
+
+        @include resize-screen(380px) {
+            font-size: 35px;
+        }
     }
     .service-display {
         display: flex;
 
+        @include resize-screen(690px) {
+            display: block;
+        }
+
         .services {
             width: $width-flexbox;
+
+            @include resize-screen(690px) {
+                width: 100%;
+            }
 
             li {
                 font-size: $font-size-text;
@@ -47,9 +63,14 @@
 
         .services-negociation {
             width: $width-flexbox;
-            padding: 0 30px;
             @include align-items(flex, center, center);
             flex-direction: column;
+
+            @include resize-screen(690px) {
+                margin-top: 60px;
+                padding: 0;
+                width: 100%;
+            }
 
             .price {
                 text-align: center;

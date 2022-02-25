@@ -14,6 +14,10 @@
                 width: 50%;
             }
 
+            @include landscape {
+                width: 100%;
+            }
+
             h2 {
                 font-size: $font-size-h2;
                 margin: 30px 0 60px 0;
@@ -25,6 +29,10 @@
 
                 @include normal-desktop {
                     font-size: 40px;
+                }
+
+                @include landscape {
+                    padding-top: 40px;
                 }
             }   
 
@@ -38,6 +46,11 @@
                     font-weight: bold;
                     color: $primary-color;
                 }
+
+                @include landscape {
+                    font-size: 17px;
+                }
+                
             }
 
             .btn-call-to-action {

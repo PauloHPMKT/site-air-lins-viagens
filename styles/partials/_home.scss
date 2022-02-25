@@ -77,6 +77,10 @@
             i {
                 padding-left: 7px;
             }
+
+            @include mobile {
+                padding: 15px 30px;
+            }
         }
     }
 }

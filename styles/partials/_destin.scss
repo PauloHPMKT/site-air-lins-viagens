@@ -21,11 +21,16 @@
         margin: 30px auto;
         overflow: hidden;
         max-width: 1100px;
-        
+
         .container-carrousel {
             display: flex;
             transition: transform 0.5s ease-in-out;
             transform: translateX(0);
+            
+            @include mobile {
+                width: auto;
+                justify-content: center;
+            }
 
             .box-destin {
                 object-fit: cover;
@@ -34,6 +39,7 @@
                 border-radius: 20px;
                 box-shadow: -1px 1px 8px #757575;
                 margin: 10px 15px;
+
         
                 img {
                     width: 100%;
@@ -47,12 +53,35 @@
         
                 .info-travel {
                     margin: 20px;
+
+                    @include mobile {
+                        margin: 10px;
+                    }
         
                     h3 {
                         font-size: $font-size-text;
                         font-weight: 600;
                         color: $secondary-font-color;
+
+                        @include resize-screen(800px) {
+                            font-size: 13px;
+                        }
+
+                        @include mobile {
+                            font-size: 10px;
+                        }
+
                     }
+                }
+
+                @include resize-screen(800px) {
+                    width: 210px;
+                    height: 270px;
+                }
+
+                @include mobile {
+                    width: 160px;
+                    height: 220px;
                 }
             }
         }   
