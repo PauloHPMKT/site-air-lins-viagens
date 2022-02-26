@@ -29,8 +29,8 @@ body {
 }
 @media (max-width: 768px) {
   body {
-    background-position: 30% 40%;
-    background-size: 240%;
+    background-position: 25% 50%;
+    background-size: 260%;
   }
 }
 @media (max-width: 540px) {
@@ -42,7 +42,13 @@ body {
 @media (max-width: 480px) {
   body {
     background-position: 60% 0%;
-    background-size: 330%;
+    background-size: 300%;
+  }
+}
+@media (max-width: 380px) {
+  body {
+    background-position: 60% 0%;
+    background-size: 320%;
   }
 }
 
@@ -173,23 +179,24 @@ a {
   }
 }
 .header .nav-bar .cover {
-  background-color: #27215f;
+  background-image: linear-gradient(to bottom, #27215f, orange 200.71%);
   position: absolute;
-  left: 0;
-  top: 0;
+  right: 0%;
+  top: -100%;
   width: 100%;
   height: 100vh;
   visibility: hidden;
   opacity: 0;
   z-index: 4;
-  transition: 400ms ease-in-out all;
+  transition: 500ms ease-in-out all;
 }
 .header .nav-bar .cover .btn-close {
   position: absolute;
   right: 40px;
-  top: 7px;
+  top: 10px;
   border-radius: 10px;
   background-color: #F7941F;
+  cursor: pointer;
 }
 .header .nav-bar .cover .btn-close .fa-solid {
   font-size: 35px;
@@ -209,9 +216,14 @@ a {
   width: 100%;
   text-align: center;
 }
+.header .nav-bar .cover .menu .menu-bars-list li {
+  font-size: 24px;
+  padding: 25px 0;
+  border: 1px solid #09043b1f;
+}
 .header .nav-bar .open {
   top: 0;
-  left: 0;
+  right: 0;
   opacity: 1;
   visibility: visible;
   display: flex;

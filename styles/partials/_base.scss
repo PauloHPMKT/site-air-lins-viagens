@@ -31,8 +31,8 @@ body {
     }
     
     @include landscape {
-        background-position: 30% 40%;
-        background-size: 240%;
+        background-position: 25% 50%;
+        background-size: 260%;
     }
 
     @include resize-screen(540px) {
@@ -42,7 +42,12 @@ body {
 
     @include resize-screen(480px) {
         background-position: 60% 0%;
-        background-size: 330%;
+        background-size: 300%;
+    }
+
+    @include resize-screen(380px) {
+        background-position: 60% 0%;
+        background-size: 320%;
     }
 }
 

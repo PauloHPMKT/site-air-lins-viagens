@@ -2,10 +2,9 @@ const menuHamb = document.querySelector('#menu-bars')
 const menuCover = document.querySelector('#cover-menu')
 const menuClose = document.querySelector('#btn-close')
 
-console.log(menuClose)
 
 menuHamb.addEventListener('click', handleMenuOnClick)
-menuClose.addEventListener('click', rideMenuOnClick)
+menuCover.addEventListener('click', rideMenuOnClick)
 
 function handleMenuOnClick() {
 
@@ -22,11 +21,7 @@ function handleMenuOnClick() {
 
 
 function rideMenuOnClick() {
-    if(open) {
-        
         menuCover.classList.remove('open')
-
-    }
 }
 /*console.log(menuHamb)
 
