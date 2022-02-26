@@ -1,4 +1,4 @@
-const destinationList = [
+const destinationList = [ 
     {
         destination: './assents/lisbon.png',
         text: 'Lisboa - Portugal',
