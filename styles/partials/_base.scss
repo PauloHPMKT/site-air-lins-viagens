@@ -18,6 +18,7 @@ body {
     background-attachment: fixed;
     font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
     height: auto;
+    
 
     @include resize-screen(1500px) {
         background-position: 30% 20%;
@@ -49,6 +50,7 @@ main {
     background-image: linear-gradient(to right, #11192580, rgba(83, 84, 88, 0.096) 70.71%);
     height: auto;
     width: 100vw;
+    position: relative;
 }
 
 ul {

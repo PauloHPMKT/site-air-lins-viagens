@@ -50,6 +50,7 @@ main {
   background-image: linear-gradient(to right, #11192580, rgba(83, 84, 88, 0.096) 70.71%);
   height: auto;
   width: 100vw;
+  position: relative;
 }
 
 ul {
@@ -130,7 +131,7 @@ a {
   transition: 0.4s ease;
 }
 .header .nav-bar .menu li:hover {
-  background-color: rgba(228, 125, 29, 0.253);
+  background-color: rgba(228, 125, 29, 0.884);
   border-radius: 10px;
 }
 @media (max-width: 1180px) {
@@ -171,6 +172,50 @@ a {
     font-size: 30px;
   }
 }
+.header .nav-bar .cover {
+  background-color: #27215f;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 4;
+  transition: 400ms ease-in-out all;
+}
+.header .nav-bar .cover .btn-close {
+  position: absolute;
+  right: 40px;
+  top: 7px;
+  border-radius: 10px;
+  background-color: #F7941F;
+}
+.header .nav-bar .cover .btn-close .fa-solid {
+  font-size: 35px;
+  padding: 5px 10px;
+  color: #fff;
+}
+.header .nav-bar .cover .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.header .nav-bar .cover .menu .menu-bars-list {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+.header .nav-bar .open {
+  top: 0;
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+}
 
 .container-home {
   display: flex;
@@ -205,8 +250,8 @@ a {
 .container-home .introduction-title h1 {
   font-size: 55px;
   color: #fff;
-  -webkit-animation: roar 3000ms ease;
-          animation: roar 3000ms ease;
+  -webkit-animation: roar 2500ms ease;
+          animation: roar 2500ms ease;
 }
 @keyframes roar {
   0% {
@@ -906,6 +951,7 @@ a {
   .footer .display-footer {
     display: block;
     margin: 30px 15px;
+    padding-bottom: 0;
   }
 }
 .footer .display-footer div {
@@ -914,8 +960,13 @@ a {
 }
 @media (max-width: 768px) {
   .footer .display-footer div {
-    margin: 0 0 30px 0;
+    margin: 0 0 40px 50px;
     font-size: 13px;
+  }
+}
+@media (max-width: 480px) {
+  .footer .display-footer div {
+    margin: 0 0 60px 5px;
   }
 }
 .footer .display-footer div h4 {
@@ -924,20 +975,23 @@ a {
 }
 @media (max-width: 768px) {
   .footer .display-footer div h4 {
+    margin-bottom: 20px;
     display: 13px;
   }
-}
-.footer .display-footer .payment {
-  width: 400px;
-}
-.footer .display-footer .payment img {
-  width: 100%;
 }
 .footer .display-footer .location {
   width: 180px;
 }
 .footer .display-footer .location span {
+  display: block;
+}
+.footer .display-footer .location span {
   line-height: 27px;
+}
+@media (max-width: 930px) {
+  .footer .display-footer .location span {
+    font-size: 13px;
+  }
 }
 .footer .display-footer .general-information {
   width: 300px;
@@ -954,6 +1008,28 @@ a {
 .footer .display-footer .social-links .fa-brands:hover {
   color: #F7941F;
   transform: scale(1.31);
+}
+.footer .payment {
+  background-color: #fff;
+  text-align: center;
+}
+.footer .payment img {
+  width: 700px;
+}
+@media (max-width: 768px) {
+  .footer .payment img {
+    width: 400px;
+  }
+}
+@media (max-width: 480px) {
+  .footer .payment img {
+    width: 350px;
+  }
+}
+@media (max-width: 370px) {
+  .footer .payment img {
+    width: 280px;
+  }
 }
 .footer .developer {
   padding: 40px 0;

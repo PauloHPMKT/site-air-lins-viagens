@@ -9,6 +9,7 @@
         @include landscape {
             display: block;
             margin: 30px 15px;
+            padding-bottom: 0;
         }
         
         div {
@@ -16,8 +17,12 @@
             color: #fff;
 
             @include landscape {
-                margin: 0 0 30px 0;
+                margin: 0 0 40px 50px;
                 font-size: 13px;
+            }
+
+            @include mobile {
+                margin: 0 0 60px 5px;
             }
 
             h4 {
@@ -25,38 +30,38 @@
                 font-size: 15px;
 
                 @include landscape {
+                    margin-bottom: 20px;
                     display: 13px;
                 }
-            }
-        }
-
-        .payment {
-            width: 400px;
-
-            img {
-                width: 100%;
-            }
+            }    
         }
 
         .location {
             width: 180px;
 
             span {
+                display: block;
+            }
+
+            span {
                 line-height: 27px;
+         
+                @include resize-screen(930px) {
+                    font-size: 13px;
+                }              
             }
         }
 
         .general-information {
-            width: 300px;
-
-            
+            width: 300px;  
         }
 
         .social-links {
-            
+ 
             h4 {
                 margin-left: 5px;
             }
+
             .fa-brands {
                 font-size: 35px;
                 margin: 7px;
@@ -69,6 +74,27 @@
                 }
             }
         }
+    }
+
+    .payment {
+        background-color: #fff;
+        text-align: center;
+
+        img {
+            width: 700px;
+
+            @include landscape {
+                width: 400px;
+            }
+
+            @include mobile {
+                width: 350px;
+            }
+
+            @include resize-screen(370px) {
+                width: 280px;
+            }
+        }       
     }
 
     .developer {

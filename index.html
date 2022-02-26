@@ -44,9 +44,39 @@
                         </a>
                     </li>
                 </ul>
-                <!--MENU BARRA RESPONSIVO-->
-                <div class="menu-bars">
-                    <i class="fa-solid fa-bars-staggered"></i>
+                <!--MENU BARRA RESPONSIVO OPEN-->
+                <div class="menu-bars" id="menu-bars">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="cover" id="cover-menu">
+                    <!--MENU BARRA RESPONSIVO CLOSE--> 
+                    <div class="btn-close" id="btn-close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <nav class="menu">
+                        <ul class="menu-bars-list">
+                            <li>
+                                <a href="index.html">
+                                    HOME
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#about-section">
+                                    SOBRE NÓS
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#works-section">
+                                    NOSSO TRABALHO
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#services-section">
+                                    SERVIÇOS
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </nav>
         </header>   
@@ -252,8 +282,8 @@
                 </div>
                 <div class="location">
                     <h4>LOCALIZAÇÃO</h4>
-                    <span>Lisboa - Portugal</span>
-                    <span>Recife, PE - Brasil</span>
+                    <span  class="description">Lisboa - Portugal</span>
+                    <span  class="description">Recife, PE - Brasil</span>
                 </div>
                 <div class="social-links">
                     <h4>SIGA NOSSAS REDES SOCIAIS</h4>
@@ -261,11 +291,15 @@
                     <i class="fa-brands fa-facebook-square"></i>
                 </div>
             </div>
+            <div class="payment">
+                <img src="./assents/pagamentos.png" alt="lista de pagamentos">
+            </div>
             <div class="developer">
                 Developed by: <a href="">Dev++</a> | <a href="">HP Design & Web </a><span id="year"></span> ©
             </div> 
         </footer>
     </main>
+    <script src="scripts/scripts.js"></script>
     <script src="scripts/carrousel-generate.js"></script>
     <script src="scripts/year.js"></script>
 </body>

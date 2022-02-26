@@ -1,4 +1,5 @@
 .header {
+    
     @include align-items(flex, space-between, center);
     animation: roar 2500ms ease;
     // animation header
@@ -30,6 +31,7 @@
 
     .nav-bar {
         @include align-items(flex, center, center);
+        
 
         .menu {
             display: flex;
@@ -40,7 +42,7 @@
                 transition: .4s ease;
 
                 &:hover {
-                    background-color: rgba(228, 125, 29, 0.253);
+                    background-color: rgba(228, 125, 29, 0.884);
                     border-radius: 10px;
                 }
 
@@ -54,6 +56,7 @@
             }
         }
 
+        // responsive menu bars - mobile
         .menu-bars {
             background-color: $secondary-color;
             color: #fff;
@@ -79,6 +82,57 @@
             @include mobile {
                 font-size: 30px;
             }
+        }
+
+        .cover {
+            background-color: $primary-color;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            visibility: hidden;
+            opacity: 0;
+            z-index: 4;
+            transition: 400ms ease-in-out all;
+
+            .btn-close {
+                position: absolute;
+                right: 40px;
+                top: 7px;
+                border-radius: 10px;
+                background-color: $secondary-color;
+
+                .fa-solid {
+                    font-size: 35px;
+                    padding: 5px 10px;
+                    color: #fff;
+                }
+            }
+
+            .menu {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 100%;
+                width: 100%;
+
+                .menu-bars-list {
+                    color: #fff;
+                    width: 100%;
+                    text-align: center;   
+                }
+            }
+
+        }
+
+        .open {
+            top: 0;
+            left: 0;
+            opacity: 1;
+            visibility: visible;
+            display: flex;
         }
     }
 }
