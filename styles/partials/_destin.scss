@@ -88,6 +88,11 @@
                     width: 160px;
                     height: 220px;
                 }
+
+                @include resize-screen(370px) {
+                    width: 157px;
+                    height: 217px;
+                }
             }
         }   
     }

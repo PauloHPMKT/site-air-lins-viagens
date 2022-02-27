@@ -84,14 +84,22 @@ a {
 }
 
 .box-link {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(255, 166, 0, 0.397);
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100vw;
+  left: -100%;
+  width: 100%;
   height: 100vh;
   z-index: 10;
+  transition: 0.4s ease-in-out;
+}
+@media (max-width: 768px) {
+  .box-link {
+    width: 100%;
+  }
 }
 .box-link .modal-links {
   width: 380px;
@@ -103,6 +111,16 @@ a {
   padding: 30px;
   position: relative;
 }
+.box-link .modal-links .btn-close-modal {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  background-color: red;
+  color: #fff;
+  padding: 7px 12px;
+  border-radius: 100%;
+  cursor: pointer;
+}
 .box-link .modal-links .fa-brands {
   font-size: 60px;
   background-color: #27215f;
@@ -111,6 +129,11 @@ a {
   border-radius: 7px;
   margin-bottom: 20px;
 }
+@media (max-width: 768px) {
+  .box-link .modal-links .fa-brands {
+    font-size: 35px;
+  }
+}
 .box-link .modal-links h4 {
   color: #fff;
   left: 50px;
@@ -118,10 +141,20 @@ a {
   text-align: center;
   position: absolute;
 }
+@media (max-width: 768px) {
+  .box-link .modal-links h4 {
+    font-size: 17px;
+  }
+}
 .box-link .modal-links span {
   font-size: 18px;
   text-align: center;
   color: #464545;
+}
+@media (max-width: 768px) {
+  .box-link .modal-links span {
+    font-size: 15px;
+  }
 }
 .box-link .modal-links .contact-btn {
   display: flex;
@@ -138,11 +171,20 @@ a {
   font-size: 18px;
   font-weight: 600;
 }
+@media (max-width: 768px) {
+  .box-link .modal-links .contact-btn a {
+    font-size: 11px;
+  }
+}
+@media (max-width: 768px) {
+  .box-link .modal-links {
+    width: 300px;
+    height: 250px;
+  }
+}
 
 .box-link.open-modal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  left: 0;
 }
 
 .header {
@@ -243,7 +285,7 @@ a {
 }
 .header .nav-bar .cover {
   background-image: linear-gradient(to bottom, #27215f, orange 200.71%);
-  position: absolute;
+  position: fixed;
   right: 0%;
   top: -100%;
   width: 100%;
@@ -579,6 +621,11 @@ a {
   .bg-fixed .mask .invite-section .btn-call-to-action {
     font-size: 17px;
     padding: 13px 40px;
+  }
+}
+@media (max-width: 370px) {
+  .bg-fixed {
+    background-position: 52%;
   }
 }
 
@@ -931,6 +978,12 @@ a {
   .bg-destin .carrousel .container-carrousel .box-destin {
     width: 160px;
     height: 220px;
+  }
+}
+@media (max-width: 370px) {
+  .bg-destin .carrousel .container-carrousel .box-destin {
+    width: 157px;
+    height: 217px;
   }
 }
 

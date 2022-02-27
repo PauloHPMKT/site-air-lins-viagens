@@ -86,4 +86,8 @@
             }
         }
     }
+
+    @include resize-screen(370px) {
+        background-position: 52%;
+    }
 }

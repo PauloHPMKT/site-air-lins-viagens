@@ -86,7 +86,7 @@
 
         .cover {
             background-image: linear-gradient( to bottom, $primary-color, orange 200.71%);
-            position: absolute;
+            position: fixed;
             right: 0%;
             top: -100%;
             width: 100%;
