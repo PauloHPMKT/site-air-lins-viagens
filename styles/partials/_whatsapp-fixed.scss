@@ -1,0 +1,47 @@
+.whatsapp {
+    position: fixed;
+    z-index: 10;
+    bottom: 20px;
+    right: 20px;
+    background-color: #c4d111;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 150px;
+    padding: 10px;
+    margin: 0;
+    animation: shake 1.5s infinite;
+    cursor: pointer;
+    
+    .fa-brands {
+        color: #fff;
+        position: absolute;
+        left: -20px;
+        bottom: 0px;
+        font-size: 30px;
+        background-color: #1c9e1c;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    
+    p {
+        margin-left: 20px;
+        font-weight: 500;
+    }
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0); 
+    }
+    20%, 80% {
+        transform: translate3d(2px, 0, 0); 
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0); 
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0); 
+    }
+}
