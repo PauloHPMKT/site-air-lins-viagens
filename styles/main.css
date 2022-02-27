@@ -187,6 +187,65 @@ a {
   left: 0;
 }
 
+.whatsapp {
+  position: fixed;
+  z-index: 10;
+  bottom: 20px;
+  right: 20px;
+  background-color: #c4d111;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  width: 150px;
+  padding: 10px;
+  margin: 0;
+  -webkit-animation: shake 1.5s infinite;
+          animation: shake 1.5s infinite;
+  cursor: pointer;
+}
+.whatsapp .fa-brands {
+  color: #fff;
+  position: absolute;
+  left: -20px;
+  bottom: 0px;
+  font-size: 30px;
+  background-color: #1c9e1c;
+  border-radius: 10px;
+  padding: 10px;
+}
+.whatsapp p {
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+@-webkit-keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -338,7 +397,8 @@ a {
   display: flex;
   justify-content: flex-start;
   align-items: unset;
-  height: 90vh;
+  height: 100vh;
+  padding: 80px 0;
 }
 @media (max-width: 1024px) {
   .container-home {
@@ -367,8 +427,8 @@ a {
 .container-home .introduction-title h1 {
   font-size: 55px;
   color: #fff;
-  -webkit-animation: roar 2500ms ease;
-          animation: roar 2500ms ease;
+  -webkit-animation: roar 1000ms ease;
+          animation: roar 1000ms ease;
 }
 @keyframes roar {
   0% {
@@ -410,8 +470,8 @@ a {
   color: #fff;
   cursor: pointer;
   transition: 0.4s ease;
-  -webkit-animation: roar 2500ms ease;
-          animation: roar 2500ms ease;
+  -webkit-animation: roar 1000ms ease;
+          animation: roar 1000ms ease;
 }
 @keyframes roar {
   0% {

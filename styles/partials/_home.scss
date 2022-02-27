@@ -1,7 +1,8 @@
 .container-home {
     //background-image: linear-gradient(to right, #11192580, rgba(83, 84, 88, 0.096) 70.71%);
     @include align-items(flex, flex-start, unset);
-    height: 90vh;
+    height: 100vh;
+    padding: 80px 0;
 
     @include tablet {
         height: auto;
@@ -28,7 +29,7 @@
         h1 {
             font-size: 55px;
             color: #fff;
-            animation: roar 2500ms ease;
+            animation: roar 1000ms ease;
             // animation title
             @keyframes roar {
                 0% {
@@ -67,7 +68,7 @@
             color: #fff;
             cursor: pointer;
             transition: .4s ease;
-            animation: roar 2500ms ease;
+            animation: roar 1000ms ease;
             // animation button
             @keyframes roar {
                 0% {

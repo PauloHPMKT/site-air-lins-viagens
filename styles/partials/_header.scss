@@ -1,5 +1,4 @@
 .header {
-    
     @include align-items(flex, space-between, center);
     animation: roar 2500ms ease;
     // animation header
