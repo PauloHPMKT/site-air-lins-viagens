@@ -18,6 +18,7 @@ body {
     background-attachment: fixed;
     font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
     height: auto;
+    position: relative;
     
 
     @include resize-screen(1500px) {

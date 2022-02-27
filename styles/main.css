@@ -14,6 +14,7 @@ body {
   background-attachment: fixed;
   font-family: "Montserrat", sans-serif, Arial, Helvetica, sans-serif;
   height: auto;
+  position: relative;
 }
 @media (max-width: 1500px) {
   body {
@@ -80,6 +81,68 @@ a {
 
 .setup-section {
   padding: 100px 0;
+}
+
+.box-link {
+  display: none;
+  background-color: rgba(255, 166, 0, 0.397);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+.box-link .modal-links {
+  width: 380px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  position: relative;
+}
+.box-link .modal-links .fa-brands {
+  font-size: 60px;
+  background-color: #27215f;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+.box-link .modal-links h4 {
+  color: #fff;
+  left: 50px;
+  font-size: 26px;
+  text-align: center;
+  position: absolute;
+}
+.box-link .modal-links span {
+  font-size: 18px;
+  text-align: center;
+  color: #464545;
+}
+.box-link .modal-links .contact-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.box-link .modal-links .contact-btn a {
+  background-color: #1c9e1c;
+  margin: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.box-link.open-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
