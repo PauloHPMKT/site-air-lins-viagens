@@ -30,9 +30,18 @@ function rideMenuOnClick() {
 // evento para modal link ---------------------------
 
 const btnCallToAction = document.querySelectorAll('.btn-call-to-action')
+const boxWindow = document.querySelector('.box-link')
+const btnCloseModal = document.querySelector('#btn-close-modal')
+
+console.log(boxWindow)
 
 btnCallToAction.forEach(button => button.addEventListener('click', showModalLinks))
+btnCloseModal.addEventListener('click', removeModalLinks)
 
 function showModalLinks() {
-    alert('realizando teste de click')
+    boxWindow.classList.add('open-modal')
+}
+
+function removeModalLinks() {
+    boxWindow.classList.remove('open-modal')
 }
