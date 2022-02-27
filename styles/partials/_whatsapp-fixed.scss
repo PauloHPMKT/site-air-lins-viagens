@@ -1,6 +1,5 @@
 .whatsapp {
     position: fixed;
-    z-index: 10;
     bottom: 20px;
     right: 20px;
     background-color: #c4d111;
@@ -11,6 +10,10 @@
     margin: 0;
     animation: shake 1.5s infinite;
     cursor: pointer;
+
+    @include landscape {
+        width: 100px;
+    }
     
     .fa-brands {
         color: #fff;
@@ -21,11 +24,19 @@
         background-color: #1c9e1c;
         border-radius: 10px;
         padding: 10px;
+
+        @include landscape {
+            font-size: 20px;
+        }
     }
     
     p {
         margin-left: 20px;
         font-weight: 500;
+
+        @include landscape {
+            font-size: 10px;
+        }
     }
 }
 

@@ -189,7 +189,6 @@ a {
 
 .whatsapp {
   position: fixed;
-  z-index: 10;
   bottom: 20px;
   right: 20px;
   background-color: #c4d111;
@@ -202,6 +201,11 @@ a {
           animation: shake 1.5s infinite;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .whatsapp {
+    width: 100px;
+  }
+}
 .whatsapp .fa-brands {
   color: #fff;
   position: absolute;
@@ -212,9 +216,19 @@ a {
   border-radius: 10px;
   padding: 10px;
 }
+@media (max-width: 768px) {
+  .whatsapp .fa-brands {
+    font-size: 20px;
+  }
+}
 .whatsapp p {
   margin-left: 20px;
   font-weight: 500;
+}
+@media (max-width: 768px) {
+  .whatsapp p {
+    font-size: 10px;
+  }
 }
 
 @-webkit-keyframes shake {
@@ -398,7 +412,6 @@ a {
   justify-content: flex-start;
   align-items: unset;
   height: 100vh;
-  padding: 80px 0;
 }
 @media (max-width: 1024px) {
   .container-home {
