@@ -25,7 +25,7 @@ body {
 @media (max-width: 940px) {
   body {
     background-position: 30% 40%;
-    background-size: 180%;
+    background-size: 200%;
   }
 }
 @media (max-width: 768px) {
@@ -94,7 +94,9 @@ a {
   width: 100%;
   height: 100vh;
   z-index: 10;
-  transition: 0.4s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.6s ease-in-out;
 }
 @media (max-width: 768px) {
   .box-link {
@@ -185,6 +187,8 @@ a {
 
 .box-link.open-modal {
   left: 0;
+  opacity: 1;
+  visibility: visible;
 }
 
 .whatsapp {
@@ -1063,80 +1067,90 @@ a {
 .bg-section {
   background-color: #fff;
 }
+.bg-section .subtext {
+  font-size: 20px;
+  color: #464545;
+  text-align: center;
+  padding-bottom: 60px;
+}
 .bg-section .display-support {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 200px;
+  perspective: 1000px;
+  margin: 5px;
 }
 @media (max-width: 768px) {
   .bg-section .display-support {
-    display: block;
-    text-align: center;
+    flex-direction: column;
+    height: auto;
   }
 }
-.bg-section .display-support li {
-  width: 330px;
-  height: 350px;
-  padding: 20px;
-  margin: 0 20px;
-  text-align: center;
-  color: #464545;
-  transition: 0.5s ease-in-out;
+.bg-section .display-support .card-img {
+  width: 250px;
+  height: 270px;
+  margin: 7px;
+  cursor: pointer;
 }
-.bg-section .display-support li:hover {
-  box-shadow: -2px 2px 10px #cccccc;
-  border-radius: 20px;
-  transform: scale(1.1);
+.bg-section .display-support .card-img:hover .flipper {
+  transition: all 0.6s;
+  transform: rotateY(180deg);
   background-color: #27215f;
-  color: #fff;
+  border-radius: 20px;
+  box-shadow: -2px 2px 10px #bdbcbc;
 }
 @media (max-width: 768px) {
-  .bg-section .display-support li:hover {
-    transform: unset;
+  .bg-section .display-support .card-img {
+    height: 200px;
   }
 }
-.bg-section .display-support li:hover h4 {
+.bg-section .display-support .card-img .flipper {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
   color: #fff;
+  position: relative;
+}
+.bg-section .display-support .card-img .flipper .back {
+  transform: rotateY(180deg);
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.bg-section .display-support .card-img .flipper .back h4 {
+  margin-bottom: 20px;
 }
 @media (max-width: 1024px) {
-  .bg-section .display-support li {
-    padding: 10px;
+  .bg-section .display-support .card-img .flipper .back {
+    font-size: 13px;
   }
 }
-@media (max-width: 768px) {
-  .bg-section .display-support li {
-    text-align: center;
-    width: 200px;
-    height: 300px;
-    margin: 15px auto;
-  }
+.bg-section .display-support .card-img .flipper .front, .bg-section .display-support .card-img .flipper .back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 20px;
 }
-.bg-section .display-support li .icon {
-  margin-bottom: 10px;
-}
-.bg-section .display-support li .icon .fa-solid {
+.bg-section .display-support .card-img .flipper .front .fa-solid, .bg-section .display-support .card-img .flipper .back .fa-solid {
   font-size: 80px;
-  background-color: #27215f;
   color: #fff;
-  padding: 40px;
+  padding: 50px;
+  background-color: #27215f;
   border-radius: 100%;
 }
 @media (max-width: 1024px) {
-  .bg-section .display-support li .icon .fa-solid {
+  .bg-section .display-support .card-img .flipper .front .fa-solid, .bg-section .display-support .card-img .flipper .back .fa-solid {
     font-size: 50px;
-  }
-}
-.bg-section .display-support li h4 {
-  margin-bottom: 20px;
-  color: #242424;
-}
-.bg-section .display-support li p {
-  font-size: 15px;
-  font-weight: 600;
-}
-@media (max-width: 1024px) {
-  .bg-section .display-support li p {
-    font-size: 13px;
+    padding: 40px;
   }
 }
 

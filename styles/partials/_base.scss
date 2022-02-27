@@ -28,7 +28,7 @@ body {
     
     @include resize-screen(940px) {
         background-position: 30% 40%;
-        background-size: 180%;
+        background-size: 200%;
     }
     
     @include landscape {
