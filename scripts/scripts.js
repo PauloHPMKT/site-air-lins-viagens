@@ -25,6 +25,7 @@ function rideMenuOnClick() {
         menuCover.classList.remove('open')
 }
 
+
 //----------------------------------------------------
 
 // evento para modal link ---------------------------
@@ -32,8 +33,6 @@ function rideMenuOnClick() {
 const btnCallToAction = document.querySelectorAll('.btn-call-to-action')
 const boxWindow = document.querySelector('.box-link')
 const btnCloseModal = document.querySelector('#btn-close-modal')
-
-console.log(boxWindow)
 
 btnCallToAction.forEach(button => button.addEventListener('click', showModalLinks))
 btnCloseModal.addEventListener('click', removeModalLinks)
@@ -44,4 +43,26 @@ function showModalLinks() {
 
 function removeModalLinks() {
     boxWindow.classList.remove('open-modal')
+}
+
+
+//----------------------------------------------------
+
+// evento para scroll suave ---------------------------
+
+const menuHeader = document.querySelectorAll('nav a[href^="#"]')
+
+
+menuHeader.forEach(item => item.addEventListener('click', scrollOnClick))
+
+function scrollOnClick(e) {
+    e.preventDefault()
+    const element = e.target
+    const id = element.getAttribute('href')
+    const section = document.querySelector(id).offsetTop
+
+    window.scroll({
+        top: section,
+        behavior: 'smooth',
+    })
 }
