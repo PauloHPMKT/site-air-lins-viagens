@@ -1,6 +1,12 @@
 .header {
     @include align-items(flex, space-between, center);
-    animation: roar 2500ms ease;
+    width: 80%;
+    padding:0 200px;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    width: 100%;
+    animation: roar 1200ms ease;
     // animation header
     @keyframes roar {
         0% {
@@ -11,10 +17,19 @@
         }
     }
 
-    @include normal-desktop {
-        max-width: 80%;
+    @include resize-screen(1300px) {
+        padding: 0 120px;
     }
 
+    @include tablet {
+        padding: 0 60px;
+    }
+
+    @include mobile {
+        padding: 0 35px;
+    }
+
+    
     img {
         width: 200px;
 
@@ -23,15 +38,16 @@
         }
 
         @include mobile {
-            width: 100px;
+            width: 130px;
+            padding-top: 5px
         }
     
     }
 
+    
     .nav-bar {
-        @include align-items(flex, center, center);
-        
-
+        @include align-items(flex, flex-end, center);
+        text-align: end;
         .menu {
             display: flex;
             color: #fff;
@@ -79,12 +95,12 @@
             }
 
             @include mobile {
-                font-size: 30px;
+                font-size: 27px;
             }
         }
 
         .cover {
-            background-image: linear-gradient( to bottom, $primary-color, orange 200.71%);
+            background-image: linear-gradient( to bottom, $primary-color, #030113 180.71%);
             position: fixed;
             right: 0%;
             top: -100%;
@@ -140,5 +156,20 @@
             visibility: visible;
             display: flex;
         }
+    }
+}
+
+.menuColorized {
+    background-color: #ffffffc2;
+    animation: dropDown 1000ms ease-in-out;
+}
+  
+@keyframes dropDown {
+    0% {
+        height: 10px;
+    }
+    
+    100% {
+        height: 12%;
     }
 }
