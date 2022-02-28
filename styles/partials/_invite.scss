@@ -7,6 +7,10 @@
     .mask {
         background-image: linear-gradient(to right, #FFF, #f5f5f5e7 40.71%, rgba(83, 84, 88, 0), rgba(83, 84, 88, 0));
 
+        @include landscape {
+            background-image: linear-gradient(to right, #FFF, #f5f5f565 40.71%, rgba(83, 84, 88, 0), rgba(83, 84, 88, 0));
+        }
+
         .invite-section {
             width: 60%;
 
@@ -15,7 +19,7 @@
             }
 
             @include landscape {
-                width: 60%;
+                width: 80%;
             }
 
             @include resize-screen(590px) {
@@ -23,7 +27,7 @@
             }
 
             @include mobile {
-                width: 100%;
+                width: 90%;
             }
 
 
@@ -55,12 +59,23 @@
                     font-size: 24px;
                     font-weight: bold;
                     color: $primary-color;
+
+                    @include landscape {
+                        font-size: 20px;
+                    }
+
+                    @include mobile {
+                        font-size: 17px;
+                    }
                 }
 
                 @include landscape {
-                    font-size: 17px;
+                    font-size: 15px;
                 }
                 
+                @include mobile {
+                    font-size: 13px;
+                }
             }
 
             .btn-call-to-action {

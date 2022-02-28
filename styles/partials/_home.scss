@@ -2,14 +2,15 @@
     //background-image: linear-gradient(to right, #11192580, rgba(83, 84, 88, 0.096) 70.71%);
     @include align-items(flex, flex-start, unset);
     height: 100vh;
+    padding-top: 80px;
 
     @include tablet {
         height: auto;
-        padding: 0 0 100px 0;
+        padding: 80px 0 100px 0;
     }
 
     @include mobile {
-        padding: 40px 0 100px 0;
+        padding: 80px 0 100px 0;
     }
 
     .introduction-title {

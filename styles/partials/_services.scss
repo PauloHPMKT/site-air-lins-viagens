@@ -57,6 +57,10 @@
                 @include resize-screen(930px) {
                     font-size: 17px;
                 }
+
+                @include landscape {
+                    font-size: 15px;
+                }
                 
             }
         }

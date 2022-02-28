@@ -20,7 +20,7 @@ body {
     height: auto;
     position: relative;
     
-
+    //responsive background's size
     @include resize-screen(1500px) {
         background-position: 30% 20%;
         background-size: 160%;
@@ -32,7 +32,7 @@ body {
     }
     
     @include landscape {
-        background-position: 25% 50%;
+        background-position: 25% 80%;
         background-size: 260%;
     }
 
@@ -43,7 +43,7 @@ body {
 
     @include resize-screen(480px) {
         background-position: 60% 0%;
-        background-size: 300%;
+        background-size: 320%;
     }
 
     @include resize-screen(380px) {
@@ -74,11 +74,17 @@ a {
     margin: 0 auto;
 
     @include normal-desktop {
-        max-width: 80%;
+        max-width: 85%;
 
     }
 }
 
 .setup-section {
-    padding: 100px 0;
+    padding: 80px 0;
+}
+
+@include tablet {
+    h2 {
+        color: red;
+    }
 }
