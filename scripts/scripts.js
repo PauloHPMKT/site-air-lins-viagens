@@ -66,3 +66,22 @@ function scrollOnClick(e) {
         behavior: 'smooth',
     })
 }
+
+
+//funções de scroll-----------------------------------
+// scroll header function--------------------------------
+
+const header = document.querySelector('.header')
+const navbar = document.querySelector('.nav-bar ul')
+const logo = document.querySelector('.header img')
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY !== 0) {
+        header.classList.add('menuColorized')
+        navbar.style.color = '#27215f'
+    } else {
+        header.classList.remove('menuColorized')
+        navbar.style.color = '#fff'
+    }    
+
+})    
