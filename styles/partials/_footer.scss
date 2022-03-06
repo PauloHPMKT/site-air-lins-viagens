@@ -1,127 +1,123 @@
 .footer {
-    padding: 80px 0 0 0;
-    background-color: #0D0B20;
+  padding: 80px 0 0 0;
+  background-color: #0D0B20;
+  color: $third-color; 
+  
+  &-container {
+    @include align-items(flex, space-between, unset);
+    max-width: 1300px;
+    margin: 0 auto;
+    padding:0 60px 80px 60px;
+
+    @include resize-screen(850px) {
+      flex-direction: column;
+      padding: 0 80px 80px 80px;
+    }
+
+    &--information {
+      width: $width-flexbox;
+
+      @include resize-screen(850px) {
+        width: 100%;
+        margin-bottom: 60px;
+        text-align: center;
+      }
+
+      .social {
+        padding-bottom: 30px;
+
+        h4 {
+          font-size: 23px;
+          margin-bottom: 5px;
+
+          @include resize-screen(850px) {
+            font-size: 27px;
+          }
+
+          @include mobile {
+            font-size: 17px;
+          }
+        }
+      }
+
+      .contacts {
+
+        span {          
+          display: block;
+          line-height: 25px;
+
+          @include resize-screen(850px) {
+            font-size: 20px;
+          }
+
+          @include resize-screen(570px) {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+
+    &--social-links {
+      text-align: center;
+
+      h4 {
+        margin-left: 5px;
+        font-size: 23px;
+      }
+
+      .fa-brands {
+        font-size: 35px;
+        margin: 10px;
+        transition: .4s ease;
+        cursor: pointer;
+
+        &:hover {
+          color: $secondary-color;
+          transform: scale(1.31);
+          text-shadow: 0 0 5px $secondary-color;
+        }
+      }
+    }
+  }
+
+  &-payment {
+    background-color: #fff;
+    text-align: center;
+
+    img {
+      width: 700px;
+
+      @include landscape {
+        width: 400px;
+      }
+
+      @include mobile {
+        width: 350px;
+      }
+
+      @include resize-screen(370px) {
+        width: 280px;
+      }
+    }
+  }
+
+  &-developer {
+    padding: 30px 0;
+    border-top: 1px solid #252525;
+    text-align: center;
     color: #fff;
 
-    .display-footer {
-        display: flex;
-        justify-content: space-between;
-        padding:0 60px 80px 60px;
-
-        @include resize-screen(835px) {
-            flex-direction: column;
-            padding: 0;
-        }       
-
-        .general-information {
-            width: 50%;
-
-            @include resize-screen(835px) {
-                width: 100%;
-                text-align: center;
-            }
-            
-            .social {
-                padding-bottom: 30px;
-
-                h4 {
-                    font-size: 23px;
-                    margin-bottom: 5px;
-
-                    @include tablet {
-                        font-size: 17px;
-                    }
-                }
-
-                span {
-                    @include tablet {
-                        font-size: 13px;
-                    }
-                }
-            }
-
-            .contacts {
-
-                span {
-                    display: block;
-                    line-height: 25px;
-
-                    @include tablet {
-                        font-size: 13px;
-                    }
-                }
-            }
-        }
-        
-        .social-links {
-            text-align: center;
-
-            @include resize-screen(835px) {
-                padding: 30px 0 60px 0;
-            }
-
-            h4 {
-                margin-left: 5px;
-                font-size: 23px;
-
-                @include tablet {
-                    font-size: 15px;
-                }
-            }
-
-            .fa-brands {
-                font-size: 35px;
-                margin: 10px;
-                transition: .4s ease;
-                cursor: pointer;
-
-                &:hover {
-                    color: $secondary-color;
-                    transform: scale(1.31);
-                    text-shadow: 0 0 5px $secondary-color;
-                }
-            }
-        }
+    @include landscape {
+      font-size: 13px;
     }
 
-    .payment {
-        background-color: #fff;
-        text-align: center;
+    a {
+      color: #F7941F;
+      transition: .4s ease;
 
-        img {
-            width: 700px;
-
-            @include landscape {
-                width: 400px;
-            }
-
-            @include mobile {
-                width: 350px;
-            }
-
-            @include resize-screen(370px) {
-                width: 280px;
-            }
-        }       
-    }
-
-    .developer {
-        padding: 30px 0;
-        border-top: 1px solid #252525;
-        text-align: center;
+      &:hover {
         color: #fff;
-
-        @include landscape {
-            font-size: 13px;
-        }
-
-        a {
-            color: #F7941F;
-            transition: .4s ease;
-
-            &:hover {
-                color: #fff;
-            }
-        }
+      }
     }
+  }
 }

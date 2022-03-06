@@ -2,89 +2,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;1,100&display=swap');
 @import './mixins-extends/responsive-design';
 
-//global styles
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-image: url(../assents/lisbon-bridge.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 110%;
-    background-attachment: fixed;
-    font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
-    height: auto;
-    position: relative;
-    
-    //responsive background's size
-    @include resize-screen(1500px) {
-        background-position: 30% 20%;
-        background-size: 160%;
-    }
-    
-    @include resize-screen(940px) {
-        background-position: 30% 40%;
-        background-size: 200%;
-    }
-    
-    @include landscape {
-        background-position: 25% 80%;
-        background-size: 260%;
-    }
+  background-image: url(../images/lisbon-bridge.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
 
-    @include resize-screen(540px) {
-        background-position: 60% 0%;
-        background-size: 300%;
-    }
+  @include landscape {
+    background-position: center;
+  }
 
-    @include resize-screen(480px) {
-        background-position: 60% 0%;
-        background-size: 320%;
-    }
-
-    @include resize-screen(380px) {
-        background-position: 60% 0%;
-        background-size: 320%;
-    }
-}
-
-main {
-    background-image: linear-gradient(to right, #11192580, rgba(83, 84, 88, 0.096) 70.71%);
-    height: auto;
-    width: 100vw;
-    position: relative;
+  @include mobile {
+    background-position: center 80%;
+  }
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-}
-
-//default rules -- setup page   
-.size-page {
-    max-width: 1100px;
-    margin: 0 auto;
-
-    @include normal-desktop {
-        max-width: 85%;
-
-    }
-}
-
-.setup-section {
-    padding: 80px 0;
-}
-
-@include tablet {
-    h2 {
-        color: red;
-    }
+  text-decoration: none;
+  color: inherit;
 }

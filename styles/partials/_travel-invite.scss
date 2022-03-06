@@ -1,0 +1,140 @@
+.travel {
+  background: url(../images/discovers.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  &-mask {
+    padding: 80px 0;
+    background-image: linear-gradient(to right, #FFF, #f5f5f5e7 40.71%, rgba(83, 84, 88, 0), rgba(83, 84, 88, 0));
+  
+    @include landscape {
+      background-image: linear-gradient(to right, #FFF, #f5f5f565 40.71%, rgba(83, 84, 88, 0), rgba(83, 84, 88, 0));
+    }
+    
+    &--container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding-top: 60px;
+      @include align-items(flex, center, flex-start);
+      flex-direction: column;
+
+      @include resize-screen(1500px) {
+        width: 85%;
+      }
+       
+      .travel-mask--title {
+        width: 50%;
+        line-height: 60px;
+
+        @include resize-screen(1500px) {
+          width: 60%;
+        }
+
+        @include normal-desktop {
+          width: 60%;
+        }
+
+        @include landscape {
+          width: 75%;
+        }
+
+        @include resize-screen(590px) {
+          width: 80%;
+        }
+
+        @include mobile {
+          width: 100%;
+          line-height: 45px;
+        }
+
+        h2 {
+          font-size: $font-size-h2;
+          color: $primary-font-color;
+  
+          span {
+            color: $secondary-color;
+            display: block;
+          }
+
+          @include landscape {
+            font-size: 45px;
+            padding-bottom: 80px;
+          }
+
+          @include mobile {
+            font-size: 38px;
+          }
+        }
+      }
+
+      .travel-mask-cta {
+        padding: 30px 0;
+        
+        p {
+          line-height: 30px;
+          font-size: $font-size-text;
+          color: $secondary-font-color;
+          text-shadow: 0 0 10px $third-color;
+
+          .airlins {
+            font-size: 26px;
+            font-weight: 600;
+            color: $primary-color;
+          }
+
+          @include landscape {
+            font-size: 19px;
+            line-height: 30px;
+          }
+        }
+
+        button {
+          @include layout-btn;
+          margin: 50px 0;
+          background-color: $secondary-color;
+          color: $primary-color;
+          transition: $transition-effect;
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+          animation: pulse-black 2s infinite;
+
+          @keyframes pulse-black {
+            0% {
+              -webkit-transform: scale(0.95);  
+              transform: scale(0.95);
+              box-shadow: 0 0 0 0 rgba(255, 166, 0, 0.658);
+            }
+
+            70% {
+              -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+              box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+            }
+
+            100% {
+              -webkit-transform: scale(0.95);
+              transform: scale(0.95);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            }
+          }
+
+          &::after {
+            content: "\f5b0";
+            font: var(--fa-font-solid);
+            padding-left: 14px;
+          }
+
+          &:hover {
+            @include hover-btn-effect($primary-color, #fff)
+          }
+
+          @include landscape {
+            padding: 15px 40px;
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,101 +1,133 @@
-.bg-destin {
-    background-color: #fff; 
-    padding: 80px 0 10px 0;   
+.destin {
+  background-color: $third-color;
+  padding: 80px 0;
 
-    .title-destiny {
-        text-align: center;
+  @include mobile {
+    padding: 40px 0;
+  }
 
-        h2 {
-            font-size: $font-size-h2;
-            margin-bottom: 15px;
-            color: $primary-font-color;
+  &-container {
+    max-width: 1300px;
+    margin: 0 auto;
 
-            @include mobile {
-                font-size: 40px;
-            }
-        }
-
-        span {
-            font-size: 20px;
-            color: $secondary-font-color;
-        }
+    @include resize-screen(1500px) {
+      max-width: 85%;
     }
 
-    .carrousel {
+    &--title {
+      text-align: center;
+
+      h2 {
+        font-size: $font-size-h2;
+        color: $primary-font-color;
+        margin-bottom: 15px;
+
+        @include mobile {
+          font-size: 38px;
+        }
+      }
+
+      span {
+        font-size: 20px;
+        color: $secondary-font-color;
+      }
+    }
+
+    &--carrousel {
+      display: flex;
+      margin: 30px auto;
+      overflow: hidden;
+      max-width: 1100px;
+
+      @include resize-screen(1280px) {
+        max-width: 100%;
+      }
+
+      .container-carrousel {
         display: flex;
-        margin: 30px auto;
-        overflow: hidden;
-        max-width: 1100px;
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(0);
 
-        .container-carrousel {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-            transform: translateX(0);
-            
-            @include mobile {
-                width: auto;
-                justify-content: center;
+        .box-destin {
+          object-fit: cover;
+          width: 290px;
+          height: 350px;
+          border-radius: 20px;
+          box-shadow: -1px 1px 8px #757575;
+          margin: 10px 15px;
+  
+          img {
+            width: 100%;
+            height: 80%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0px 1px 8px #757575;
+          }
+
+          .info-travel {
+            margin: 20px;
+
+            @include landscape {
+              margin: 10px;
             }
 
-            .box-destin {
-                object-fit: cover;
-                width: 290px;
-                height: 350px;
-                border-radius: 20px;
-                box-shadow: -1px 1px 8px #757575;
-                margin: 10px 15px;
+            h3 {
+              font-size: $font-size-text;
+              font-weight: 600;
+              color: $secondary-font-color;
 
-        
-                img {
-                    width: 100%;
-                    height: 80%;
-                    border-top-left-radius: 20px;
-                    border-top-right-radius: 20px;
-                    border-bottom-left-radius: 20px;
-                    border-bottom-right-radius: 20px;
-                    box-shadow: 0px 1px 8px #757575;
-                }
-        
-                .info-travel {
-                    margin: 20px;
+              @include resize-screen(1145px) {
+                font-size: 17px;
+              }
 
-                    @include mobile {
-                        margin: 10px;
-                    }
-        
-                    h3 {
-                        font-size: $font-size-text;
-                        font-weight: 600;
-                        color: $secondary-font-color;
+              @include resize-screen(880px) {
+                font-size: 15px;
+              }
 
-                        @include resize-screen(800px) {
-                            font-size: 13px;
-                            font-weight: bold;
-                        }
-
-                        @include mobile {
-                            font-size: 12px;
-                        }
-
-                    }
-                }
-
-                @include resize-screen(800px) {
-                    width: 210px;
-                    height: 270px;
-                }
-
-                @include mobile {
-                    width: 160px;
-                    height: 220px;
-                }
-
-                @include resize-screen(370px) {
-                    width: 157px;
-                    height: 217px;
-                }
+              @include mobile {
+                font-size: 12px;
+              }
             }
-        }   
+          }
+
+          @include resize-screen(1280px) {
+            width: 270px;
+            height: 330px;
+          }
+
+          @include resize-screen(1145px) {
+            width: 260px;
+            height: 320px;
+          }
+
+          @include resize-screen(1044px) {
+            width: 240px;
+            height: 300px;
+          }
+
+          @include resize-screen(880px) {
+            width: 210px;
+            height: 270px;
+          }
+
+          @include resize-screen(700px) {
+            width: 190px;
+            height: 250px;
+          }
+
+          @include mobile {
+            width: 160px;
+            height: 220px;
+          }
+
+          @include resize-screen(370px) {
+            width: 157px;
+            height: 217px;
+          }
+        }
+      }
     }
+  }
 }
-

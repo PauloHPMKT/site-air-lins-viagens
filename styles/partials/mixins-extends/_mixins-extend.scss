@@ -1,4 +1,3 @@
-//align-items
 @mixin align-items($flex, $justify, $align) {
     display: $flex;
     justify-content: $justify;
@@ -14,7 +13,8 @@
     cursor: pointer;
 }
 
-@mixin hover-btn-effect($bg-btn-color) {
+@mixin hover-btn-effect($bg-btn-color, $font-color) {
     background-color: $bg-btn-color;
+    color: $font-color;
     transform: scale(1.2);
 }
