@@ -16,11 +16,8 @@ console.log(navbar)
 window.addEventListener('scroll', () => {
     if (window.scrollY !== 0) {
         header.classList.add('menuColorized')
-        //navbar.style.background = '#27215f'
-        //navbar.style.color = 'red'
     } else {
         header.classList.remove('menuColorized')
-        //navbar.style.color = '#27215f'
     }    
 
 })  

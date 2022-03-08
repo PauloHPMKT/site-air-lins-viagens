@@ -67,8 +67,6 @@ const img = document.querySelectorAll('.box-destin')
 //function to moviment carrousel
 let idx = 0
 
-console.log(idx)
-
 function carrousel() {
   idx++
 
