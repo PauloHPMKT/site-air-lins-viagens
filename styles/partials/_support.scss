@@ -34,6 +34,8 @@
       @include align-items(flex, space-between, center);
       width: 100%;
       height: 200px;
+      -webkit-perspective: 1000px;
+      -moz-perspective: 1000px;
       perspective: 1000px;
       margin: 5px;
 
@@ -48,9 +50,12 @@
         cursor: pointer;
         
         &:hover .flipper {
-          transition: all 0.6s ;
-          -webkit-transform: rotateY(180deg);    
-                  transform: rotateY(180deg);
+          -webkit-transition: all 0.6s;
+          -moz-transition: all 0.6s;
+          transition: all 0.6s;
+          -webkit-transform: rotateY(180deg);
+          -moz-transform: rotateY(180deg);    
+          transform: rotateY(180deg);
           background-color: $primary-color;
           border-radius: 20px;
           box-shadow: -2px 2px 10px #bdbcbc;
@@ -60,14 +65,16 @@
           width: 100%;
           height: 100%;
           -webkit-transform-style: preserve-3d;
-                  transform-style: preserve-3d;
+          -moz-transform-style: preserve-3d;
+          transform-style: preserve-3d;
           transition: transform 0.4s;
           color: #fff;
           position: relative;
 
           .back {
             -webkit-transform: rotateY(180deg);
-                    transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            transform: rotateY(180deg);
             padding: 15px;
             text-align: center;
             display: flex;
@@ -85,6 +92,8 @@
             position: absolute;
             width: 100%;
             height: 100%;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
             backface-visibility: hidden;
             border-radius: 20px;
       
@@ -123,7 +132,8 @@
         margin: 10px;
         cursor: pointer;
         -webkit-transition: .4s ease;
-                transition: .4s ease;
+        -moz-transition: .4s ease;
+        transition: .4s ease;
         color: $primary-font-color;
 
         @include resize-screen(900px) {
@@ -153,7 +163,8 @@
         .support-description {
           margin: 10px;
           -webkit-transition: .4s ease;
-                  transition: .4s ease;
+          -moz-transition: .4s ease;
+          transition: .4s ease;
 
           &:hover {
             color: $third-color;
@@ -175,7 +186,8 @@
         &:hover {
           color: $third-color;
           -webkit-transform: scale(1.1);
-                  transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          transform: scale(1.1);
           border-radius: 20px;
           background-color: $primary-color;
           box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.486);
