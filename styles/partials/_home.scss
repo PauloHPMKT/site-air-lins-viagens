@@ -53,6 +53,36 @@
       text-align: start;
       color: $third-color;
       text-shadow: 0 0 5px #839fac;
+      -webkit-animation: roar 2000ms ease;
+      -moz-animation: roar 2000ms ease;
+      animation: roar 2000ms ease;
+
+      @-webkit-keyframes roar {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @-moz-keyframes roar {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes roar {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
 
       @include normal-desktop {
         font-size: 55px;
@@ -76,6 +106,8 @@
       background-color: $primary-color;
       color: $third-color;
       margin: 23px 0;
+      -webkit-transition: $transition-effect;
+      -moz-transition: $transition-effect;
       transition: $transition-effect;
 
       &::after {

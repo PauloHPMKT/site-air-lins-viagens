@@ -3,6 +3,36 @@
   position: fixed;
   z-index: 10;
   width: 100vw;
+  -webkit-animation: roar 2000ms ease;
+  -moz-animation: roar 2000ms ease;
+  animation: roar 2000ms ease;
+
+  @-webkit-keyframes roar {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes roar {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes roar {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
   &-navbar {
     min-width: 1300px;
@@ -33,6 +63,8 @@
         padding: 20px;
         text-transform: uppercase;
         border-radius: 10px;
+        -webkit-transition: $transition-effect;
+        -moz-transition: $transition-effect;
         transition: $transition-effect;
         
         &:hover {
@@ -43,6 +75,8 @@
         a {
           font-weight: 700;
           color: $primary-color;
+          -webkit-transition: $transition-effect;
+          -moz-transition: $transition-effect;
           transition: $transition-effect;
           text-shadow: 0 0 5px $third-color;
 
@@ -91,6 +125,8 @@
       visibility: hidden;
       opacity: 0;
       z-index: 9;
+      -webkit-transition: 500ms ease-in-out all;
+      -moz-transition: 500ms ease-in-out all;
       transition: 500ms ease-in-out all;
 
       .btn-close {
@@ -124,6 +160,8 @@
             font-size: 24px;
             padding: 25px 0;
             border: 1px solid #09043b1f;
+            -webkit-transition: $transition-effect;
+            -moz-transition: $transition-effect;
             transition: $transition-effect;
 
             &:hover {
@@ -147,7 +185,29 @@
 
 .menuColorized {
   background-color: #ffffffc2;
+  -webkit-animation: dropDown 1000ms ease-in-out;
+  -moz-animation: dropDown 1000ms ease-in-out;
   animation: dropDown 1000ms ease-in-out;
+}
+
+@-webkit-keyframes dropDown {
+  0% {
+    height: 10px;
+  }
+  
+  100% {
+    height: 12%;
+  }
+}
+
+@-moz-keyframes dropDown {
+  0% {
+    height: 10px;
+  }
+  
+  100% {
+    height: 12%;
+  }
 }
 
 @keyframes dropDown {
