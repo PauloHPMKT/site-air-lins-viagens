@@ -15,14 +15,22 @@ body {
   background-attachment: fixed;
   position: relative;
 }
+@media (max-width: 1024px) {
+  body {
+    background-position: top;
+    background-attachment: scroll;
+    background-size: 200%;
+  }
+}
 @media (max-width: 768px) {
   body {
-    background-position: center;
+    background-position: 53% -180px;
   }
 }
 @media (max-width: 480px) {
   body {
-    background-position: center 80%;
+    background-size: 400%;
+    background-position: 53% 0;
   }
 }
 
@@ -1109,6 +1117,63 @@ a {
   height: 270px;
   margin: 7px;
   cursor: pointer;
+}
+.support-container--display .card-img .face {
+  width: 250px;
+  height: 270px;
+  perspective: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.support-container--display .card-img .face .front {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 700ms;
+  background-color: #27215f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.support-container--display .card-img .face .front .fa-solid {
+  font-size: 80px;
+  color: #fff;
+  padding: 40px;
+  background-color: #27215f;
+  border-radius: 100%;
+}
+.support-container--display .card-img .face .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 700ms;
+  transform: rotateY(-180deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #27215f;
+  color: #fff;
+  text-align: center;
+}
+.support-container--display .card-img .face .back h4 {
+  margin-bottom: 30px;
+}
+.support-container--display .card-img .face:hover .front {
+  transform: rotateY(180deg);
+  z-index: 0;
+}
+.support-container--display .card-img .face:hover .back {
+  transform: rotateY(0);
+  z-index: 1;
 }
 .support-container--display .card-img:hover .flipper {
   transition: all 0.6s;

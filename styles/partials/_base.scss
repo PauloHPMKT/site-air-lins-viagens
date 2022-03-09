@@ -18,12 +18,20 @@ body {
   background-attachment: fixed;
   position: relative;
 
+  @include tablet {
+    background-position: top;
+    background-attachment: scroll;
+    background-size: 200%;
+  }
+
   @include landscape {
-    background-position: center;
+    background-position: 53% -180px;
   }
 
   @include mobile {
-    background-position: center 80%;
+    background-size: 400%;
+    background-position: 53% 0;
+    //background-position: center 80%;
   }
 }
 
