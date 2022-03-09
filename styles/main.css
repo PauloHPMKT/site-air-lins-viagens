@@ -501,7 +501,6 @@ a {
 }
 @media (max-width: 480px) {
   .travel-mask--container .travel-mask--title {
-    width: 100%;
     line-height: 45px;
   }
 }
