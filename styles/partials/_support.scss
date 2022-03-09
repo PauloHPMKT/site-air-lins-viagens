@@ -61,7 +61,7 @@
             width: 100%;
             height: 100%;
             padding: 10px;
-            border-radius: 10px;
+            border-radius: 30px;
             transition: 700ms;
             background-color: $primary-color;
             @include align-items(flex, center, center);
@@ -80,7 +80,7 @@
             width: 100%;
             height: 100%;
             padding: 10px;
-            border-radius: 10px;
+            border-radius: 30px;
             transition: 700ms;
             transform: rotateY(-180deg);
             backface-visibility: hidden;
