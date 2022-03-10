@@ -45,7 +45,7 @@
     bottom: 6px;
 
     @include landscape {
-      width: 36px;
+      width: 30px;
     }
   }
   
@@ -55,7 +55,7 @@
     font-size: 20px;
 
     @include landscape {
-      font-size: 12px;
+      font-size: 10px;
       margin-left: 10px;
     }
   }

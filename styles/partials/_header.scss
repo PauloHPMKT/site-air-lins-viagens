@@ -47,7 +47,7 @@
       width: 200px;
       padding-top: 5px;
 
-      @include landscape {
+      @include resize-screen(800px) { 
         width: 130px;
       }
     }
@@ -104,6 +104,10 @@
 
       @include tablet {
         display: flex;
+      }
+
+      @include resize-screen(800px) { 
+       font-size: 34px;
       }
 
       @include landscape {

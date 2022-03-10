@@ -11,8 +11,6 @@ year.innerHTML = currentYear.getFullYear()
 const header = document.querySelector('.header')
 const logo = document.querySelector('.header img')
 
-console.log(navbar)
-
 window.addEventListener('scroll', () => {
     if (window.scrollY !== 0) {
         header.classList.add('menuColorized')
@@ -89,3 +87,4 @@ function showModalLinks() {
 function removeModalLinks() {
     boxWindow.classList.remove('open-modal')
 }
+

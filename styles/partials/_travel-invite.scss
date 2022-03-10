@@ -40,7 +40,7 @@
         }
 
         @include resize-screen(590px) {
-          width: 80%;
+          width: 100%;
         }
 
         @include mobile {
@@ -75,6 +75,10 @@
           font-size: $font-size-text;
           color: $secondary-font-color;
           text-shadow: 0 0 10px $third-color;
+
+          @include resize-screen(590px) {
+            padding-right: 20%;
+          }
 
           .airlins {
             font-size: 26px;
