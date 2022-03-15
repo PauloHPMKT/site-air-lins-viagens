@@ -26,6 +26,7 @@ body {
 
   @include landscape {
     background-position: 53% -180px;
+    background-size: 300%;
   }
 
   @include mobile {

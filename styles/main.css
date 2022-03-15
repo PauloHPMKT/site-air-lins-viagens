@@ -25,6 +25,7 @@ body {
 @media (max-width: 768px) {
   body {
     background-position: 53% -180px;
+    background-size: 300%;
   }
 }
 @media (max-width: 480px) {
