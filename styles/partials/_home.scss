@@ -16,6 +16,10 @@
     padding: 130px 0;
   }
 
+  @include mobile {
+    padding: 80px 0;
+  }
+
   &-title {
     width: $width-flexbox;
 

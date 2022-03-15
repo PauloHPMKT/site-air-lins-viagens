@@ -256,6 +256,11 @@ a {
     padding: 130px 0;
   }
 }
+@media (max-width: 480px) {
+  .home {
+    padding: 80px 0;
+  }
+}
 .home-title {
   width: 50%;
 }
@@ -725,6 +730,7 @@ a {
   .works-container--depoiments .btn-responsive {
     display: block;
     text-align: center;
+    padding: 10px;
   }
 }
 .works-container--depoiments .btn-responsive p {
