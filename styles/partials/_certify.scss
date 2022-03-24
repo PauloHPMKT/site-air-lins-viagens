@@ -1,0 +1,91 @@
+.certification {
+  background-color: $primary-color;
+  padding: 80px 0;
+  display: flex;
+
+  
+  &-container {
+    @include align-items(flex, center, center);
+    max-width: 1300px;
+    margin: 0 auto;
+    
+    @include resize-screen(1500px) {
+      max-width: 85%;
+    }
+
+    @include resize-screen(1480px) {
+      flex-direction: column;
+    }
+    .certification-description {
+      width: 50%;
+      color: $third-color;
+
+      @include resize-screen(1480px) {
+        padding-bottom: 60px;
+        text-align: center;
+      }
+
+      @include tablet {
+        width: 70%;
+      }
+
+      @include landscape {
+        width: 85%;
+      }
+
+      @include mobile {
+        width: 100%;
+      }
+
+      h2 {
+        font-size: $font-size-h2;
+        margin-bottom: 40px;
+
+        @include resize-screen(1350px) {
+          font-size: 40px;
+        }
+
+        @include resize-screen(1080px) {
+          font-size: 35px;
+        }
+      }
+
+      p {
+        font-size: $font-size-text;
+        padding-right: 60px;
+        text-align: justify;
+
+        @include resize-screen(1480px) {
+          padding-right: 0;
+          text-align: center;
+        }
+
+        @include mobile {
+          font-size: 17px;
+        }
+      }
+    }
+
+    .certification-img {
+      width: 50%;
+
+      @include tablet {
+        width: 70%;
+      }
+
+      @include landscape {
+        width: 85%;
+      }
+      
+      @include mobile {
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.527);
+
+      }
+    }
+  }
+}

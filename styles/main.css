@@ -1130,7 +1130,7 @@ a {
   }
 }
 .support-container--display .card-img {
-  width: 250px;
+  width: 100%;
   height: 270px;
   margin: 7px;
   cursor: pointer;
@@ -1139,7 +1139,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 250px;
+  width: 100%;
   height: 270px;
   perspective: 700px;
 }
@@ -1378,6 +1378,106 @@ a {
 }
 .footer-developer a:hover {
   color: #fff;
+}
+
+.certification {
+  background-color: #27215f;
+  padding: 80px 0;
+  display: flex;
+}
+.certification-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+@media (max-width: 1500px) {
+  .certification-container {
+    max-width: 85%;
+  }
+}
+@media (max-width: 1480px) {
+  .certification-container {
+    flex-direction: column;
+  }
+}
+.certification-container .certification-description {
+  width: 50%;
+  color: #fff;
+}
+@media (max-width: 1480px) {
+  .certification-container .certification-description {
+    padding-bottom: 60px;
+    text-align: center;
+  }
+}
+@media (max-width: 1024px) {
+  .certification-container .certification-description {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .certification-container .certification-description {
+    width: 85%;
+  }
+}
+@media (max-width: 480px) {
+  .certification-container .certification-description {
+    width: 100%;
+  }
+}
+.certification-container .certification-description h2 {
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+@media (max-width: 1350px) {
+  .certification-container .certification-description h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1080px) {
+  .certification-container .certification-description h2 {
+    font-size: 35px;
+  }
+}
+.certification-container .certification-description p {
+  font-size: 20px;
+  padding-right: 60px;
+  text-align: justify;
+}
+@media (max-width: 1480px) {
+  .certification-container .certification-description p {
+    padding-right: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .certification-container .certification-description p {
+    font-size: 17px;
+  }
+}
+.certification-container .certification-img {
+  width: 50%;
+}
+@media (max-width: 1024px) {
+  .certification-container .certification-img {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .certification-container .certification-img {
+    width: 85%;
+  }
+}
+@media (max-width: 480px) {
+  .certification-container .certification-img {
+    width: 100%;
+  }
+}
+.certification-container .certification-img img {
+  width: 100%;
+  box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.527);
 }
 
 .whatsapp {

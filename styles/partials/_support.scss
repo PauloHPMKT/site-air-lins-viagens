@@ -43,14 +43,14 @@
       }
 
       .card-img {
-        width: 250px;
+        width: 100%;
         height: 270px;
         margin: 7px;
         cursor: pointer;
 
         .face {
           @include align-items(flex, center, center);
-          width: 250px;
+          width: 100%;
           height: 270px;
           -webkit-perspective: 700px;
           -moz-perspective: 700px;
