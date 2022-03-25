@@ -88,3 +88,11 @@ function removeModalLinks() {
     boxWindow.classList.remove('open-modal')
 }
 
+//----------------------------------------------------
+
+// provisory worning facebook ---------------------------
+
+const warningLink = document.querySelector('#provisory').onclick = function(e) {
+    e.preventDefault()
+    alert('Aguarde as novidades de nosso Facebook!')
+}
