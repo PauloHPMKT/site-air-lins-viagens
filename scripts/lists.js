@@ -22,26 +22,32 @@ const destinationList = [
   {
     destination: './images/lisbon.png',
     text: 'Lisboa - Portugal',
+    alternative: 'Lisboa - Portugal',
   },
   {
     destination: './images/faro-algarve.png',
     text: 'Faro - Portugal',
+    alternative: 'Faro - Portugal',
   },
   {
     destination: './images/porto-portugal.png',
     text: 'Porto - Portugal',
+    alternative: 'Porto - Portugal',
   },
   {
     destination: './images/recife.png',
     text: 'Recife - Brasil',
+    alternative: 'Recife - Brasil',
   },
   {
     destination: './images/fortaleza.jpg',
     text: 'Fortaleza - Brasil',
+    alternative: 'Fortaleza - Brasil',
   },
   {
     destination: './images/rio-de-janeiro.jpg',
     text: 'Rio de Janeiro - Brasil',
+    alternative: 'Rio de Janeiro - Brasil',
   },
 ]
 
@@ -51,7 +57,7 @@ const carrouselList = document.querySelector('#img')
 destinationList.map(item => {
   carrouselList.innerHTML += `
   <div class="box-destin">
-      <img src="${item.destination}">
+      <img src="${item.destination}" alt="${item.alternative}">
       <div class="info-travel">
           <h3>${item.text}</h3>
       </div>
